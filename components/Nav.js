@@ -46,13 +46,19 @@ const Nav = () => {
       
       <ul className={navStyles["social-links"]}>
         <li>
+        <a href="https://github.com/NathanD2" className='main-graphic-link'>
           <FaGithub className={navStyles["info-icon"]} />
+        </a>
         </li>
         <li>
+        <a href="https://www.linkedin.com/in/nathandong-dev/" className='main-graphic-link'>
           <FaLinkedin className={navStyles["info-icon"]} />
+        </a>
         </li>
         <li>
+        <a href="mailto:nate.dong97@gmail.com" className='main-graphic-link'>
           <HiOutlineMail className={navStyles["info-icon"]} />
+        </a>
         </li>
       </ul>
 

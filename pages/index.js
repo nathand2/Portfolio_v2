@@ -8,7 +8,7 @@ export default function Home() {
         <title>Nathan Dong</title>
       </Head>
       <Landing />
-      <h1>Welcome to Next</h1>
+      {/* <h1>Welcome to Next</h1> */}
     </div>
   )
 }
