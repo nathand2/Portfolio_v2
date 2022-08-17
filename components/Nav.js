@@ -37,7 +37,7 @@ const Nav = () => {
           }
         </li>
         <li>
-          <a href="/#pdf" className="header-link">
+          <a href="/Nathan_Dong_Resume.pdf" className="header-link">
             <h3>Resume</h3>
           </a>
         </li>

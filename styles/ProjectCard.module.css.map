@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,GAAG,AAAA,QAAQ,CAAC;EAEV,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,IAAI;EAGnB,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,KAAK;CAClB;;AAED,AAAA,uBAAuB,CAAC;EAEtB,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,QAAQ;EAClB,cAAc,EAAE,MAAM;EAEtB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,gBAAgB;EAEvB,aAAa,EAAE,GAAG;EAElB,QAAQ,EAAE,MAAM;EAChB,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "ProjectCard.module.scss",
+        "_color.scss",
+        "_size.scss"
+    ],
+    "names": [],
+    "file": "ProjectCard.module.css"
+}
