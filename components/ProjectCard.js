@@ -1,4 +1,7 @@
 import styles from '../styles/ProjectCard.module.css'
+import { useEffect } from 'react'
+
+
 
 const ProjectCard = ({
   projectImageName,
@@ -7,24 +10,42 @@ const ProjectCard = ({
   links,
   desc,
   descLong,
+  sections
 }) => {
+  useEffect(() => {
+    console.log('sections:', sections)
+  }, [])
   return (
     <div className={styles.project_desc_container}>
       <img src={`/${projectImageName}`} className={styles.preview} />
       <div>
-        <h1 className="project-item-title">{title}</h1>
+        <h1>{title}</h1>
         {/* <div className="project-tags">
                 {tags.map((tag, index) => <Tag key={index} label={tag.tag} color={tag.color} />)}
             </div> */}
-        <p className="desc-text project-desc">{desc}</p>
-        <div className="project-links">
+        <div>
+          {
+            sections.map(({heading, content}) => (
+              <>
+                {heading !== undefined && <h1>{heading}</h1>}
+                {content.map((section) => (
+                  <>
+                    <p1>{section}</p1><br />
+                  </>
+                ))}
+                <br/>
+              </>
+            ))
+          }
+        </div>
+        <div className={styles.project_links}>
           {links.map(({ name, link, active }, index) =>
             active ? (
-              <a href={link} className="link-active" key={index}>
+              <a href={link} className={styles.link_active} key={index}>
                 {name}
               </a>
             ) : (
-              <a className="link-inactive" key={index}>
+              <a className={styles.link_inactive} key={index}>
                 {name}
               </a>
             )

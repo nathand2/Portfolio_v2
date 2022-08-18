@@ -23,5 +23,22 @@ img.preview {
   border-radius: 8px;
   // padding: 10px;
   overflow: hidden;
-  height: 70vh;
+  // height: 70vh;
+
+  h1 {
+    font-size: $--fs-500;
+  }
+  .project_links {
+    cursor: pointer;
+    a {
+      margin-right: 15px;
+    }
+  }
+
+  .link_active {
+    color: $highlight-blue;
+  }
+  .link_inctive {
+    color: grey;
+  }
 }

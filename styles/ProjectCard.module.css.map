@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAGA,AAAA,GAAG,AAAA,QAAQ,CAAC;EAEV,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,IAAI;EAGnB,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,KAAK;CAClB;;AAED,AAAA,uBAAuB,CAAC;EAEtB,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,QAAQ;EAClB,cAAc,EAAE,MAAM;EAEtB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,gBAAgB;EAEvB,aAAa,EAAE,GAAG;EAElB,QAAQ,EAAE,MAAM;EAChB,MAAM,EAAE,IAAI;CACb",
-    "sources": [
-        "ProjectCard.module.scss",
-        "_color.scss",
-        "_size.scss"
-    ],
-    "names": [],
-    "file": "ProjectCard.module.css"
-}
+{"version":3,"sources":["ProjectCard.module.scss","ProjectCard.module.css","_size.scss","_color.scss"],"names":[],"mappings":"AAGA;EAEE,aAAA;EACA,mBAAA;EAGA,WAAA;EACA,oBAAA;KAAA,iBAAA;ACLF;;ADQA;EAEE,aAAA;EACA,kBAAA;EACA,sBAAA;EAEA,YAAA;EACA,uBAAA;EAEA,kBAAA;EAEA,gBAAA;ACTF;ADYE;EACE,iBEvBO;ADaX;ADYE;EACE,eAAA;ACVJ;ADWI;EACE,kBAAA;ACTN;ADaE;EACE,cGnCa;AFwBjB;ADaE;EACE,WAAA;ACXJ","file":"ProjectCard.module.css"}

@@ -4,28 +4,16 @@
   padding: 10px;
   background: #090C18;
   color: #D7E2E1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   z-index: 20;
 }
 
 .nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 
@@ -44,8 +32,7 @@ ul.social-links li {
 }
 
 .social-links {
-  margin-left: auto;
-  /* Push to right */
+  margin-left: auto; /* Push to right */
   font-weight: 300;
 }
 
@@ -56,27 +43,22 @@ ul.social-links li {
   margin-top: auto;
   margin-bottom: auto;
 }
+.info-icon:hover {
+  color: lightblue;
+  transition: 0.2s;
+}
 
 .logo-main {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .logo-text-bold {
   margin-top: auto;
   margin-bottom: auto;
   /* color: $text-light-main; */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   justify-self: flex-start;
   font-weight: 500;
 }
@@ -85,10 +67,7 @@ ul.social-links li {
   margin-top: auto;
   margin-bottom: auto;
   /* color: $text-light-main; */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   justify-self: flex-start;
   font-weight: 100;
-}
-/*# sourceMappingURL=Nav.module.css.map */
+}/*# sourceMappingURL=Nav.module.css.map */

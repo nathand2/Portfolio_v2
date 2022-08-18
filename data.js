@@ -27,6 +27,24 @@ export const highlightProjectData = [
     desc: "Collaborative Scheduling Web app where users can invite people to sessions via links to collaboratively plan an activity",
     descLong:
       "Collaborative Scheduling Web app where users can invite people to sessions via links to collaboratively plan an activity. Implemented Frontend using React.js, React Bootstrap and D3. Implemented Backend using Express.js, MySQL, JSON Web Tokens and Passport.js Google Oauth.",
+    sections: [
+      {
+        heading: undefined,
+        content: ['Collaborative Scheduling Web app where users can invite people to sessions via links to collaboratively plan an activity']
+      },
+      {
+        heading: 'What problem does this solve?',
+        content: ['Discussing plans with people using strict start times is inflexible and leads to a lot of back and forth. Instead of endless re-adjusting the plans to fit everyones needs, instead, everyone can just say what time they are available. Everyone can see when everyone else is available and can then make plans accordingly']
+      },
+      {
+        heading: 'Frontend:',
+        content: ['React.js, ReactBootstrap, D3']
+      },
+      {
+        heading: 'Backend:',
+        content: ['Node.js, Express.js, JSON Web Tokens, Passport.js, MySQL']
+      },
+    ]
   },
   {
     id: 1,
@@ -60,6 +78,20 @@ export const highlightProjectData = [
     desc: "Task Tracker Web Application created using a microarchitecture approach with a RESTful API.",
     descLong:
       "Task Tracker Web Application created using a microarchitecture approach with a RESTful API. Currently, everyone with access to the web app shares the same task tracker. Next Steps: Authentication and Users.",
+      sections: [
+        {
+          heading: undefined,
+          content: ['Task Tracker Web Application created using a microarchitecture approach with a RESTful API. Currently, everyone with access to the web app shares the same task tracker.']
+        },
+        {
+          heading: 'Frontend:',
+          content: ['React.js, SASS']
+        },
+        {
+          heading: 'Backend:',
+          content: ['Node.js, Express.js, PostgreSQL']
+        },
+      ],
   },
   {
     id: 2,
@@ -79,6 +111,16 @@ export const highlightProjectData = [
     desc: "The FAM system is a parental control lock on an individual's bank account. The system can register users, keep track of all spending/transactions of their bank accounts and lock accounts if certain conditions are met.",
     descLong:
       "The FAM system is a parental control lock on an individual's bank account. The system can register users, keep track of all spending/transactions of their bank accounts and lock accounts if certain conditions are met. Different account types provide differing levels of moderation in addition to each having allocated budgets to 4 categories (Games and Entertainment, Clothing and Accessories, Eating Out, and Miscellaneous)",
+      sections: [
+        {
+          heading: undefined,
+          content: ['The FAM system is a parental control lock on an individual\'s bank account. The system can register users, keep track of all spending/transactions of their bank accounts and lock accounts if certain conditions are met. Different account types provide differing levels of moderation in addition to each having allocated budgets to 4 categories (Games and Entertainment, Clothing and Accessories, Eating Out, and Miscellaneous)']
+        },
+        {
+          heading: 'Implementation: Python',
+          content: []
+        },
+      ],
   },
 ];
 

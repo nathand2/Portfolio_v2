@@ -45,6 +45,10 @@ ul.social-links {
   cursor: pointer;
   margin-top: auto;
   margin-bottom: auto;
+  &:hover {
+    color: lightblue;
+    transition: .2s;
+  }
 }
 
 .logo-main {

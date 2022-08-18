@@ -12,6 +12,7 @@
 
 .text_small {
   font-size: 15px;
+  word-wrap: break-word;
 }
 
 .container {
@@ -42,7 +43,6 @@ img.graphic {
     opacity: 1;
   }
 }
-
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -51,46 +51,42 @@ img.graphic {
     opacity: 1;
   }
 }
-
 .overlay {
   width: 100%;
   height: calc(100vh - 70px);
-  background: #090c18;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #090c18), to(rgba(9, 12, 24, 0.6)));
-  background: linear-gradient(0deg, #090c18 1%, rgba(9, 12, 24, 0.6) 100%);
+  background: rgb(9, 12, 24);
+  background: linear-gradient(0deg, rgb(9, 12, 24) 1%, rgba(9, 12, 24, 0.6) 100%);
   z-index: 11;
   top: 70px;
   position: absolute;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding-bottom: 10vh;
 }
 
 .content_container {
   width: 50% !important;
-  font-size: 32px;
 }
-
+@media (max-width: 1530px) {
+  .content_container {
+    width: 90% !important;
+    margin-left: 10%;
+  }
+}
 .content_container h1 {
-  font-size: 100px;
+  font-size: clamp(1rem, 5vw, 12rem);
+}
+.content_container h6 {
+  font-size: clamp(0.7rem, 1vw, 1rem);
 }
 
 img.chap {
-  width: 200px;
-  height: 200px;
+  width: clamp(6rem, 8vw, 11rem);
+  height: clamp(6rem, 8vw, 11rem);
   border-radius: 360px;
   background-position-x: 50%;
   background-position-y: 40%;
@@ -102,13 +98,8 @@ img.chap {
 
 .chappie_container {
   padding-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-/*# sourceMappingURL=Landing.module.css.map */
+  align-items: center;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}/*# sourceMappingURL=Landing.module.css.map */

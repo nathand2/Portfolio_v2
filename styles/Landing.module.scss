@@ -1,6 +1,10 @@
 @import 'size';
 @import 'color';
 
+// Chappie Image Sizing
+$--img-chap-width: clamp(6rem, 8vw, 11rem);
+$--img-chap-height: clamp(6rem, 8vw, 11rem);
+
 $graphic-height: calc(100vh - #{$nav-height});
 
 .accent_green {
@@ -14,11 +18,13 @@ $graphic-height: calc(100vh - #{$nav-height});
 }
 .text_small {
   font-size: 15px;
+  word-wrap: break-word;
 }
 
 .container {
   height: $graphic-height;
   width: 100%;
+  // font-size: 100%;
 }
 
 img.graphic {
@@ -81,15 +87,21 @@ img.graphic {
 
 .content_container {
   width: 50% !important;
-  font-size: 32px;
+  @media (max-width: 1530px) {
+    width: 90% !important;
+    margin-left: 10%;
+  }
   h1 {
-    font-size: 100px;
+    font-size: $--fs-xl;
+  }
+  h6 {
+    font-size: $--fs-400;
   }
 }
 
 img.chap {
-  width: 200px;
-  height: 200px;
+  width: $--img-chap-width;
+  height: $--img-chap-height;
   border-radius: 360px;
   background-position-x: 50%;
   background-position-y: 40%;
@@ -103,4 +115,5 @@ img.chap {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  word-wrap: break-word;
 }

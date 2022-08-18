@@ -13,8 +13,7 @@ const Landing = () => {
           <h6>Actual Human and Software Developer</h6>
           <div className={styles.chappie_container}>
             <img src='/chappie.jpg' alt='dog, chappie' className={styles.chap} />
-            <h6>"Good developer, better belly rubber. 8/10"</h6>
-            <h6>- Chappie 2022</h6>
+            <h6 className={styles.text_small}>"Good developer, better belly rubber. 8/10" - Chappie 2022</h6>
           </div>
           <br />
           <h6 className={styles.text_small}>Click to tell Nathan to <span className={styles.accent_green}>Give Me A Treat</span></h6>
