@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import Head from 'next/head'
 import Landing from '../components/Landing'
 import ProjectHighlights from '../components/ProjectHighlights'
+import AboutMe from '../components/AboutMe'
 
 const Home = ({ projects, highlightProjects }) => {
 
@@ -20,6 +21,7 @@ const Home = ({ projects, highlightProjects }) => {
       </Head>
       <Landing />
       <ProjectHighlights highlightProjects={highlightProjects} />
+      <AboutMe />
       {/* <h1>Welcome to Next</h1> */}
     </div>
   )

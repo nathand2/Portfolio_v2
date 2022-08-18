@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  background: rgb(15, 41, 61);
+  background: linear-gradient(0deg, rgb(15, 41, 61) 7%, rgb(9, 12, 24) 92%);
+}
+@media only screen and (max-width: 1330px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container h1 {
+  color: #0B7ADB;
+}
+.container .aboutme {
+  flex: 3;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.container .aboutme h1 {
+  font-size: 2rem;
+}
+.container .aboutme h2 {
+  font-size: 1.3rem;
+}
+.container .education {
+  flex: 2;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.container .course_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-position: outside;
+}
+.container .line {
+  width: 100%;
+  height: 3px;
+  background-color: #DB7216;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}/*# sourceMappingURL=AboutMe.module.css.map */
