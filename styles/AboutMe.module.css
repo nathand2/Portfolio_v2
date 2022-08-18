@@ -26,6 +26,7 @@
 }
 .container .aboutme h2 {
   font-size: 1.3rem;
+  font-weight: 400;
 }
 .container .education {
   flex: 2;
@@ -33,6 +34,10 @@
   padding-right: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.container .education h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 .container .course_list {
   list-style-type: none;

@@ -44,12 +44,12 @@ const AboutMe = () => {
         <h3>British Columbia Institute of Technology</h3>
         <h3>Computer Systems Technology, Diploma</h3>
         <br />
-        <h6>Graduated with Distinction, (86% GPA)</h6>
+        <h2>Graduated with Distinction, (86% GPA)</h2>
         <br />
-        <h6>
+        <h2>
           Combination of computer systems theory with hands-on practical
           experience in software development
-        </h6>
+        </h2>
 
         <div className={styles.line} />
         <h1>Courses</h1>
