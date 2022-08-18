@@ -22,7 +22,6 @@ const Home = ({ projects, highlightProjects }) => {
       <Landing />
       <ProjectHighlights highlightProjects={highlightProjects} />
       <AboutMe />
-      {/* <h1>Welcome to Next</h1> */}
     </div>
   )
 }
