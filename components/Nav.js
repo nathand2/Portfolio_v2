@@ -10,8 +10,10 @@ const Nav = () => {
   return (
     <nav className={navStyles.nav}>
       <Link href="/" className={navStyles['logo-main']}>
-        <h1 className={navStyles['logo-text-bold']}>{"Nathan"}</h1>
-        <h1 className={navStyles['logo-text-normal']}>{"Dong"}</h1>
+        <>
+          <h1 className={navStyles['logo-text-bold']}>{"Nathan"}</h1>
+          <h1 className={navStyles['logo-text-normal']}>{"Dong"}</h1>
+        </>
       </Link>
       
       <ul className={navStyles['links-list']}>
