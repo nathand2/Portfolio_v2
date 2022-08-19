@@ -1,18 +1,11 @@
 import { server } from '../config'
 
-import { useEffect } from 'react'
-
 import Head from 'next/head'
 import Landing from '../components/Landing'
 import ProjectHighlights from '../components/ProjectHighlights'
 import AboutMe from '../components/AboutMe'
 
 const Home = ({ projects, highlightProjects }) => {
-
-  useEffect(() => {
-    console.log('Projectdata:', projects)
-    console.log('highlightProjectdata:', highlightProjects)
-  }, [])
 
   return (
     <div>

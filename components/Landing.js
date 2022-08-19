@@ -10,7 +10,7 @@ const Landing = () => {
         <div className={styles.content_container}>
           <h1 className={`${styles.left}`}>Hey</h1>
           <h1>
-            I'm <span className={styles.accent_blue}>N</span>athan{" "}
+            I&apos;m <span className={styles.accent_blue}>N</span>athan{" "}
             <span className={styles.accent_blue}>D</span>ong
           </h1>
           <div className={styles.line} />
