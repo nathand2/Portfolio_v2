@@ -9,10 +9,10 @@ import navStyles from "../styles/Nav.module.css";
 const Nav = () => {
   return (
     <nav className={navStyles.nav}>
-      <a href="/" className={navStyles['logo-main']}>
+      <Link href="/" className={navStyles['logo-main']}>
         <h1 className={navStyles['logo-text-bold']}>{"Nathan"}</h1>
         <h1 className={navStyles['logo-text-normal']}>{"Dong"}</h1>
-      </a>
+      </Link>
       
       <ul className={navStyles['links-list']}>
         {/* <li>
