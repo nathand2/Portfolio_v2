@@ -22,14 +22,16 @@
 .container {
   height: calc(100vh - 70px);
   width: 100%;
+  position: "relative";
+  box-sizing: content-box;
+  z-index: 10 !important;
 }
 
 img.graphic {
-  z-index: 10;
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
-  /* position: fixed; */
+  top: 70px;
   width: 100%;
   height: calc(100vh - 70px);
   animation: fadeIn 10s;
@@ -89,15 +91,18 @@ img.graphic {
 }
 
 img.chap {
-  width: clamp(6rem, 15vw, 15rem);
-  height: clamp(6rem, 15vw, 15rem);
   border-radius: 360px;
-  background-position-x: 50%;
-  background-position-y: 40%;
-  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative !important;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-right: 4rem;
+}
+
+.chappie_img_container {
+  width: clamp(6rem, 15vw, 15rem) !important;
+  height: clamp(6rem, 15vw, 15rem);
+  position: relative;
 }
 
 .chappie_container {

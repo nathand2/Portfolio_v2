@@ -28,13 +28,16 @@ $graphic-height: calc(100vh - #{$nav-height});
   height: $graphic-height;
   width: 100%;
   // font-size: 100%;
+  position: 'relative';
+  box-sizing: content-box;
+  z-index: 10 !important;
 }
 
 img.graphic {
-  z-index: 10;
   background-size: cover;
   object-fit: cover;
-  /* position: fixed; */
+  // position: fixed;
+  top: $nav-height;
   width: 100%;
   height: $graphic-height;
 
@@ -103,14 +106,22 @@ img.graphic {
 }
 
 img.chap {
-  width: $--img-chap-width;
-  height: $--img-chap-height;
+  
   border-radius: 360px;
-  background-position-x: 50%;
-  background-position-y: 40%;
-  background-size: cover;
+  // background-position-x: 50%;
+  // background-position-y: 40%;
+  // background-size: cover;
+  // object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative !important;
   object-fit: cover;
-  margin-right: 4rem;
+}
+
+.chappie_img_container {
+  width: $--img-chap-width !important;
+  height: $--img-chap-height;
+  position: relative;
 }
 
 .chappie_container {

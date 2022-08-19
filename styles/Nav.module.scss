@@ -9,7 +9,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  z-index: 20;
+  position: relative;
+  z-index: 20 !Important;
 }
 
 .nav ul {

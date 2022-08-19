@@ -3,27 +3,26 @@
 
 img.preview {
   // width: 300px;
-  height: 300px;
-  border-radius: 12px;
 
-  
-  width: 100%;
+  border-radius: 12px;
   object-fit: cover;
+  position: relative !important;
+}
+
+.image_container {
+  height: 300px;
+  width: 100%;
+  position: relative;
 }
 
 .project_desc_container {
-  // background-color: orange;
   display: flex;
   position: relative;
   flex-direction: column;
-  // justify-content: space-evenly;
   margin: 2rem;
   width: 30rem !important;
-  // border:2px solid #dadce050;
   border-radius: 8px;
-  // padding: 10px;
   overflow: hidden;
-  // height: 70vh;
 
   h1 {
     font-size: $--fs-500;

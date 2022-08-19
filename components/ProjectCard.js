@@ -1,6 +1,6 @@
 import styles from '../styles/ProjectCard.module.css'
-import { useEffect } from 'react'
 import React from 'react'
+import Image from "next/image";
 
 import ProjectCardDesc from './ProjectCardDesc'
 
@@ -15,12 +15,11 @@ const ProjectCard = ({
   descLong,
   sections
 }) => {
-  useEffect(() => {
-    console.log('sections:', sections)
-  }, [])
   return (
     <div className={styles.project_desc_container}>
-      <img src={`/${projectImageName}`} className={styles.preview} />
+      <div className={styles.image_container} >
+        <Image src={`/${projectImageName}`} className={styles.preview} alt={projectImageName} layout='fill' />
+      </div>
       <div>
         <h1>{title}</h1>
         <div>

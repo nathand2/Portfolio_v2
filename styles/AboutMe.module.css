@@ -11,9 +11,6 @@
     flex-direction: column;
   }
 }
-.container h1 {
-  color: #0B7ADB;
-}
 .container .aboutme {
   flex: 3;
   padding-left: 50px;

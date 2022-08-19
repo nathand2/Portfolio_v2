@@ -11,20 +11,13 @@
   }
   background: rgb(15,41,61);
   background: linear-gradient(0deg, rgba(15,41,61,1) 7%, rgba(9,12,24,1) 92%);
-  h1 {
-    color: $highlight-blue;
-  }
   
   .aboutme {
     flex: 3;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-evenly;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
-    // align-items: center;
     h1 {
       font-size: $--fs-600;
     }

@@ -9,7 +9,7 @@ const AboutMe = () => {
           portfolio.
         </h1>
         <br />
-        <h2> I'm an aspiring Software Developer that loves technology
+        <h2> I&apos;m an aspiring Software Developer that loves technology
           and is eager to gain experience and make things that have an impact of
           the real world! I really want a chance to prove myself despite my inexperience, please consider contacting me so that I may better express my capabilities as a software developer</h2>
         <div className={styles.line} />
@@ -27,7 +27,7 @@ const AboutMe = () => {
         <h2>
           I love technology, but I love gaming more! Titles I love are Valorant,
           Modern Warefare, Rainbow 6 Siege, Sea of Thieves, Minecraft and many
-          more. I've been playing video games all my life and I don't plan to
+          more. I&apos;ve been playing video games all my life and I don&apos;t plan to
           stop anytime soon.
         </h2>
         <br />

@@ -1,9 +1,14 @@
 img.preview {
-  height: 300px;
   border-radius: 12px;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative !important;
+}
+
+.image_container {
+  height: 300px;
+  width: 100%;
+  position: relative;
 }
 
 .project_desc_container {
