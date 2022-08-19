@@ -5,7 +5,7 @@ import Landing from '../components/Landing'
 import ProjectHighlights from '../components/ProjectHighlights'
 import AboutMe from '../components/AboutMe'
 
-const Home = ({ projects, highlightProjects }) => {
+const Home = ({ highlightProjects }) => {
 
   return (
     <div>
@@ -21,15 +21,15 @@ const Home = ({ projects, highlightProjects }) => {
 
 // Function runs at build time
 export async function getStaticProps() {
-  const res = await fetch(`${server}/api/projects`)
-  const projects = await res.json()
+  // const res = await fetch(`${server}/api/projects`)
+  // const projects = await res.json()
 
-  const res2 = await fetch(`${server}/api/highlightprojects`)
+  const res2 = await fetch(`https://api.nathandong.com/projects/highlights`)
   const highlightProjects = await res2.json()
 
   return {
     props: {
-      projects, highlightProjects,
+      highlightProjects,
     },
   }
 }
