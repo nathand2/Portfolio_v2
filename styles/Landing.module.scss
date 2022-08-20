@@ -108,17 +108,21 @@ img.graphic {
 img.chap {
   
   border-radius: 360px;
-  // background-position-x: 50%;
-  // background-position-y: 40%;
-  // background-size: cover;
-  // object-fit: cover;
   width: 100%;
   height: 100%;
   position: relative !important;
   object-fit: cover;
+  // Fade in
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
 }
 
 .chappie_img_container {
+  overflow: hidden;
+  border-radius: 360px;
   width: $--img-chap-width !important;
   height: $--img-chap-height;
   position: relative;

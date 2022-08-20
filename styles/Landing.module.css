@@ -97,9 +97,16 @@ img.chap {
   position: relative !important;
   -o-object-fit: cover;
      object-fit: cover;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
 }
 
 .chappie_img_container {
+  overflow: hidden;
+  border-radius: 360px;
   width: clamp(6rem, 15vw, 15rem) !important;
   height: clamp(6rem, 15vw, 15rem);
   position: relative;
