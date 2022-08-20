@@ -1,5 +1,3 @@
-import { server } from '../config'
-
 import Head from 'next/head'
 import Landing from '../components/Landing'
 import ProjectHighlights from '../components/ProjectHighlights'
@@ -21,9 +19,6 @@ const Home = ({ highlightProjects }) => {
 
 // Function runs at build time
 export async function getStaticProps() {
-  // const res = await fetch(`${server}/api/projects`)
-  // const projects = await res.json()
-
   const res2 = await fetch(`https://api.nathandong.com/projects/highlights`)
   const highlightProjects = await res2.json()
 
