@@ -26,10 +26,10 @@ const Landing = () => {
             </h6>
           </div>
           <br />
-          <h6 className={styles.text_small}>
+          {/* <h6 className={styles.text_small}>
             Click to tell Nathan to{" "}
             <span className={styles.accent_blue}>Give Me A Treat</span>
-          </h6>
+          </h6> */}
         </div>
       </div>
     </div>

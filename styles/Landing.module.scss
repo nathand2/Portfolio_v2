@@ -106,7 +106,6 @@ img.graphic {
 }
 
 img.chap {
-  
   border-radius: 360px;
   width: 100%;
   height: 100%;
@@ -121,6 +120,7 @@ img.chap {
 }
 
 .chappie_img_container {
+  margin-right: 50px !important;
   overflow: hidden;
   border-radius: 360px;
   width: $--img-chap-width !important;

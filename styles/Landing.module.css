@@ -105,6 +105,7 @@ img.chap {
 }
 
 .chappie_img_container {
+  margin-right: 50px !important;
   overflow: hidden;
   border-radius: 360px;
   width: clamp(6rem, 15vw, 15rem) !important;

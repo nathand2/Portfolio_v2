@@ -3,8 +3,7 @@
   min-height: 100vh;
   color: white;
   display: flex;
-  background: rgb(15, 41, 61);
-  background: linear-gradient(0deg, rgb(15, 41, 61) 7%, rgb(9, 12, 24) 92%);
+  background-color: #090C18;
 }
 @media only screen and (max-width: 1330px) {
   .container {
