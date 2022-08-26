@@ -18,10 +18,15 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+  cursor: pointer;
+  &:hover {
+    color: lightblue;
+  }
 }
 
 .nav ul li {
   margin: 5px 25px;
+  
 }
 .nav ul li h3 {
   font-weight: 400;
@@ -62,18 +67,18 @@ ul.social-links {
     
   margin-top: auto;
   margin-bottom: auto;
-  /* color: $text-light-main; */
   align-items: center;
   justify-self: flex-start;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .logo-text-normal {
     
   margin-top: auto;
   margin-bottom: auto;
-  /* color: $text-light-main; */
   align-items: center;
   justify-self: flex-start;
   font-weight: 100;
+  cursor: pointer;
 }

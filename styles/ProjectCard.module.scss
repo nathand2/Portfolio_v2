@@ -4,7 +4,7 @@
 img.preview {
   // width: 300px;
 
-  border-radius: 12px;
+  border-radius: 2px;
   object-fit: cover;
   position: relative !important;
 }
@@ -21,7 +21,7 @@ img.preview {
   flex-direction: column;
   margin: 2rem;
   width: 30rem !important;
-  border-radius: 8px;
+  border-radius: 2px;
   overflow: hidden;
 
   h1 {

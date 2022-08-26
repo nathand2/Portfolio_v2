@@ -10,21 +10,14 @@ const Nav = () => {
   return (
     <nav className={navStyles.nav}>
       <Link href="/" className={navStyles['logo-main']}>
-        <>
-          <h1 className={navStyles['logo-text-bold']}>{"Nathan"}</h1>
-          <h1 className={navStyles['logo-text-normal']}>{"Dong"}</h1>
-        </>
+        <a>
+          <h1><span className={navStyles['logo-text-bold']}>{"Nathan"}</span><span className={navStyles['logo-text-normal']}>{"Dong"}</span></h1>
+          {/* <h1>{"Dong"}</h1> */}
+        </a>
       </Link>
       
       <ul className={navStyles['links-list']}>
         {/* <li>
-          {
-            <Link href="/" className="header-link">
-              <h3>Home</h3>
-            </Link>
-          }
-        </li> */}
-        <li>
           {
             <Link href="/#projects" className="header-link">
               <h3>Projects</h3>
@@ -37,11 +30,18 @@ const Nav = () => {
               <h3>About</h3>
             </Link>
           }
-        </li>
+        </li> */}
         <li>
           <Link href="/Nathan_Dong_Resume.pdf" className="header-link">
             <h3>Resume</h3>
           </Link>
+        </li>
+        <li>
+          {
+            <Link href="/eyes" className="header-link">
+              <h3>20-20-20</h3>
+            </Link>
+          }
         </li>
       </ul>
       <span></span>

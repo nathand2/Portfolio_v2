@@ -16,6 +16,10 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+  cursor: pointer;
+}
+.nav ul:hover {
+  color: lightblue;
 }
 
 .nav ul li {
@@ -58,17 +62,17 @@ ul.social-links li {
 .logo-text-bold {
   margin-top: auto;
   margin-bottom: auto;
-  /* color: $text-light-main; */
   align-items: center;
   justify-self: flex-start;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .logo-text-normal {
   margin-top: auto;
   margin-bottom: auto;
-  /* color: $text-light-main; */
   align-items: center;
   justify-self: flex-start;
   font-weight: 100;
+  cursor: pointer;
 }/*# sourceMappingURL=Nav.module.css.map */

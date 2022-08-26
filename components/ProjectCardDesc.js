@@ -7,7 +7,7 @@ const ProjectCardDesc = ({ heading, content }) => {
         {heading !== undefined && <h1>{heading}</h1>}
         {content.map((section, index) => (
           <React.Fragment key={index}>
-            <p1>{section}</p1>
+            <p>{section}</p>
             <br />
           </React.Fragment>
         ))}

@@ -1,5 +1,5 @@
 img.preview {
-  border-radius: 12px;
+  border-radius: 2px;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative !important;
@@ -17,7 +17,7 @@ img.preview {
   flex-direction: column;
   margin: 2rem;
   width: 30rem !important;
-  border-radius: 8px;
+  border-radius: 2px;
   overflow: hidden;
 }
 .project_desc_container h1 {
