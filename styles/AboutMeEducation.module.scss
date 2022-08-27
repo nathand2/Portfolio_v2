@@ -1,0 +1,55 @@
+@import 'color';
+@import 'size';
+
+$--mid-margin: 20px !important;
+
+.container {
+  width: 100%;
+  height: 100vh;
+  // background-color: aqua;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20vh;
+}
+
+.text_large {
+  font-size: $--fs-l;
+}
+
+.text_small {
+  font-size: $--fs-400;
+}
+
+.aboutme_container {
+  // background-color: orange;
+  color: $highlight-salmon;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  margin-right: $--mid-margin;
+}
+
+.education_container {
+  // background-color: orange;
+  color: $highlight-aquamarine;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: $--mid-margin;
+}
+
+.line {
+  position: absolute;
+  display: block;
+  background-color: white;
+  height: 200px !important;
+  width: 5px !important;
+  left: calc(50% - 5px);
+  // top: 50px;
+  // margin-left: auto !important;
+  // margin-right: auto !important;
+  // margin-top: auto !important;
+  // margin-bottom: auto !important;
+}
