@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Landing from '../components/Landing'
 import ProjectHighlights from '../components/ProjectHighlights'
-import AboutMe from '../components/AboutMe'
 import AboutMeEducation from '../components/AboutMeEducation'
 
 const Home = ({ highlightProjects }) => {
@@ -14,7 +13,6 @@ const Home = ({ highlightProjects }) => {
       <Landing />
       <ProjectHighlights highlightProjects={highlightProjects} />
       <AboutMeEducation />
-      <AboutMe />
     </div>
   )
 }
