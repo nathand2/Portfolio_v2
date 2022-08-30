@@ -15,7 +15,7 @@ const AboutMeEducation = () => {
         </Link>
       </div>
       <div className={styles.education_container}>
-        <Link href="/about" passHref>
+        <Link href="/education" passHref>
           <a>
             <h1 className={`${styles.text_large} ${styles.title_education}`}>Education</h1>
             <p className={`${styles.text_small} ${styles.text_education}`}>

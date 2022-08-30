@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "../styles/Landing.module.css";
 
 import landingImg from '../public/content-bg.jpg'
-import chappieImg from '../public/chappie.jpg';  // 🐶
 
 const Landing = () => {
   return (
@@ -16,15 +15,7 @@ const Landing = () => {
             <span className={styles.accent_blue}>D</span>ong
           </h1>
           <div className={styles.line} />
-          <h6>Actual Human and Software Developer</h6>
-          <div className={styles.chappie_container}>
-            <div className={styles.chappie_img_container}>
-              <Image src={chappieImg} alt="dog, chappie" className={styles.chap} layout='fill' />
-            </div>
-            <h6 className={styles.text_small}>
-              &quot;Good developer, better belly rubber. 8/10&quot; - Chappie 2022
-            </h6>
-          </div>
+          <h6>A good Software Developer trying to become a great one.</h6>
           <br />
         </div>
       </div>
