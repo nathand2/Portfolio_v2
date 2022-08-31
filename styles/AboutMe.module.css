@@ -1,9 +1,9 @@
 .container {
-  width: 100%;
+  width: 70%;
   min-height: 100vh;
   color: white;
   display: flex;
-  background-color: #090C18;
+  background-color: #2A3239;
 }
 @media only screen and (max-width: 1330px) {
   .container {
@@ -12,10 +12,10 @@
 }
 .container .aboutme {
   flex: 3;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .container .aboutme h1 {
   font-size: 2rem;
@@ -47,4 +47,10 @@
   background-color: #0B7ADB;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.container .link {
+  color: #0B7ADB;
+}
+.container .link:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=AboutMe.module.css.map */

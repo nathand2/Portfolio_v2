@@ -72,6 +72,7 @@ const Skills = () => {
               <li>
                 PostgreSQL
               </li>
+              <li>Next.js</li>
             </ul>
           </div>
         </div>

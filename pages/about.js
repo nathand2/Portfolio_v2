@@ -4,7 +4,6 @@ import AboutMe from '../components/AboutMe'
 const Home = () => {
   return (
     <div>
-      About Me
       <AboutMe />
     </div>
   )

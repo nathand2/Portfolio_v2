@@ -2,21 +2,21 @@
 @import 'color';
 
 .container {
-  width: 100%;
+  width: 70%;
   min-height: 100vh;
   color: white;
   display: flex;
   @media only screen and (max-width: 1330px) {
     flex-direction: column;
   }
-  background-color: $dark-main;
+  background-color: $dark2-main;
   
   .aboutme {
     flex: 3;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     h1 {
       font-size: $--fs-600;
     }
@@ -51,5 +51,12 @@
     background-color: $highlight-blue;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  .link {
+    color: $highlight-blue;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

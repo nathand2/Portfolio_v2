@@ -29,13 +29,6 @@ const AboutMe = () => {
         
         <div className={styles.line} />
 
-        {/* <h1>Why should I hire you?</h1>
-        <br />
-        <h2>
-          I&apos;m an aspiring Software Developer who loves technology and is
-          eager to gain experience and make things that have an impact of the
-          real world! Give me a chance and I&apos;ll prove that I have what it takes to become a great Software Developer and addition to your team.
-        </h2> */}
         <br />
         <h1>How was your time at BCIT?</h1>
         <br />
@@ -46,23 +39,26 @@ const AboutMe = () => {
         <h1>What have you been doing since graduation?</h1>
         <br />
         <h2>
-          Since graduating, I&apos;ve been actively looking for a job as a Software Developer and have been doing projects to learn new skills and technologies.
+          Since graduating, I&apos;ve been actively looking for a job as a Software Developer and doing projects to learn new skills and technologies.
         </h2>
         <br />
         <h1>What are some random things about you?</h1>
         <br />
         <h2>
           I love technology and I love gaming! Titles I love are Valorant,
-          Modern Warefare, Rainbow 6 Siege, Sea of Thieves, Minecraft and more.
+          Modern Warefare, Rainbow 6 Siege, Sea of Thieves, Minecraft, Age of Empires II and more.
           I&apos;ve been playing video games all my life and I don&apos;t plan
           to stop anytime soon.
         </h2>
         <br />
         <h2>
-          I love movies, TV shows and books. My favorite movie has to be Avatar,
-          my favorite TV show is Attack on Titan and my favorite (nostalgic)
-          book is Hatchet by Gary Paulsen (King Killer Chronicles is also
-          great).
+          Favorite song: <a className={styles.link} href="https://open.spotify.com/track/6rz0dTA0PdhXImFV5EjM0w?si=7cf56895d2f842bb">Hide (feat. Seezyn) by Juice WRLD, Seezyn</a>
+        </h2>
+        <h2>
+          Favorite Movie: Spider-man Into the Spiderverse
+        </h2>
+        <h2>
+          Favorite Book/Series: Kingkiller Chronicles by Patrick Rothfus
         </h2>
         <div className={styles.line} />
 

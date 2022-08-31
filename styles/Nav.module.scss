@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
 @import 'size';
+@import 'color';
 
 .nav {
+  @media only screen and (max-width: 1050px) {
+    display: none;
+  }
   height: $nav-height;
+  width: 100%;
   padding: 10px;
   background: #090C18;
   color: #D7E2E1;
@@ -10,7 +15,26 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  z-index: 20 !Important;
+  z-index: 20 !important;
+}
+
+.nav_menu {
+  @media only screen and (max-width: 1049px) {
+    display: flex;
+  }
+  @media only screen and (min-width: 1050px) {
+    display: none;
+  }
+  height: $nav-height;
+  width: 100%;
+  padding: 10px;
+  background: #090C18;
+  color: #D7E2E1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 20 !important;
 }
 
 .nav ul {
@@ -19,7 +43,7 @@
   align-items: center;
   list-style: none;
   cursor: pointer;
-  &:hover {
+  li:hover {
     color: lightblue;
   }
 }
@@ -47,6 +71,7 @@ ul.social-links {
 .social-links {
   margin-left: auto;  /* Push to right */
   font-weight: 300;
+  list-style: none;
 }
 
 .info-icon {
@@ -85,4 +110,92 @@ ul.social-links {
   justify-self: flex-start;
   font-weight: 100;
   cursor: pointer;
+}
+
+.nav_normal {
+  display: flex;
+  flex-direction: row;
+}
+
+.collapsed_links_container {
+  width: 100%;
+  background-color: red;
+  display: none;
+}
+
+.collapsed_links_main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.btnmenu {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  &:hover {
+    border-width: 2px;
+    border-color: white;
+    border-radius: 5px;
+    border-style: solid;
+  }
+}
+
+
+.menu_show {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-main !important;
+  color: white;
+  z-index: 20 !important;
+  overflow: hidden;
+}
+
+.menu_hide {
+  position: relative;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-main !important;
+  color: white;
+  z-index: 20 !important;
+  overflow: hidden;
+}
+
+.menu_links_list {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+  li:hover {
+    color: lightblue;
+  }
+
+  
+  li {
+    margin: 5px 25px;
+  }
+  
+  li a {
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu_social_links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-position: outside;
+  }
 }
