@@ -8,7 +8,7 @@ const Skills = () => {
         <br />
         <div className={styles.content_container}>
           <div className={styles.col_1}>
-            <h2>1000's of Lines</h2>
+            <h2>1000&apos;s of Lines</h2>
             <ul>
               <li>
                 Python 🐍
@@ -25,7 +25,7 @@ const Skills = () => {
             </ul>
           </div>
           <div className={styles.col_2}>
-            <h2>100's of Lines</h2>
+            <h2>100&apos;s of Lines</h2>
             <ul>
               <li>
                 Typescript
