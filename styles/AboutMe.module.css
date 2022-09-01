@@ -10,6 +10,7 @@
   }
 }
 .container .aboutme {
+  width: calc(100% - 50px - 50px);
   flex: 3;
   margin-left: 50px;
   margin-right: 50px;
