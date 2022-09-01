@@ -1,5 +1,7 @@
 import styles from "../styles/AboutMe.module.css";
 
+import Skills from "./Skills";
+
 const AboutMe = () => {
   return (
     <div className={styles.container}>
@@ -16,7 +18,7 @@ const AboutMe = () => {
         </h2>
         <br />
 
-        <h1>Development Skills</h1>
+        {/* <h1>Development Skills</h1>
         <br />
         <h2>
           Programming Languages: Python, JavaScript, Java, C
@@ -25,7 +27,8 @@ const AboutMe = () => {
           CSS, SASS
           <br />
           Tools: VSCode, PyCharm, VCS, Git, GitHub, Figma
-        </h2>
+        </h2> */}
+        <Skills />
         
         <div className={styles.line} />
 
@@ -51,6 +54,9 @@ const AboutMe = () => {
           to stop anytime soon.
         </h2>
         <br />
+        <h2>
+          Favorite Language: Python 🐍
+        </h2>
         <h2>
           Favorite song: <a className={styles.link} href="https://open.spotify.com/track/6rz0dTA0PdhXImFV5EjM0w?si=7cf56895d2f842bb">Hide (feat. Seezyn) by Juice WRLD, Seezyn</a>
         </h2>
