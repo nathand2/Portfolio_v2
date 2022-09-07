@@ -1,8 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Landing.module.css";
 
-import landingImg from '../public/content-bg.jpg'
-
 const Landing = () => {
   return (
     <div className={styles.container}>

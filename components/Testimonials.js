@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import styles from "../styles/Testimonials.module.css";
 
-import chappieImg from '../public/chappie.jpg';  // 🐶
-
 const Testimonials = () => {
   return (
     <div className={styles.container}>

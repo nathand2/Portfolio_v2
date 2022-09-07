@@ -35,4 +35,21 @@
 .btn_timer:hover {
   color: lightblue;
   border-color: lightblue;
+}
+
+.test_container {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 50px;
+  flex-direction: column;
+}
+.test_container button {
+  background-color: #090C18;
+  color: #0B7ADB;
+  border-color: white;
+  border-radius: 360px;
+  height: 100px;
+  width: 100px;
 }/*# sourceMappingURL=Timer.module.css.map */
