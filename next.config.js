@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     loader: 'akamai',
-    path: './',
+    path: 'https://cdn.jsdelivr.net/gh/nathand2/Portfolio_v2/public/',
   },
   assetPrefix: './',
 }
