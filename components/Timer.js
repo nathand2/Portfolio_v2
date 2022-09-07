@@ -64,9 +64,22 @@ const Timer = () => {
     startTimer()
   }
 
+  const testNotification = () => {
+    setTimeout(() => {
+      var audio = new Audio('../notification1.wav');
+      audio.play();
+    }, 1000 * 5) // 5 Seconds
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.timer_container}>
+      <div className={styles.test_container} onClick={testNotification} >
+        <button>
+          <p>Test Notification</p>
+          <p>5s Delay</p>
+        </button>
+      </div>
         <div className={styles.note_container}>
           <p>  
             20-20-20 Rule. Every 20 minutes, look at something at least 20 feet away, for 20 seconds.
