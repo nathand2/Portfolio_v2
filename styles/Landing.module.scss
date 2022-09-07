@@ -143,3 +143,16 @@ img.chap {
   margin-top: 15px !important;
   margin-bottom: 20px !important;
 }
+
+.arrow {
+  color: white;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  z-index: 15;
+  &:hover {
+    height: 60px;
+    color: lightblue;
+  }
+}
