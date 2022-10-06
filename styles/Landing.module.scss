@@ -8,13 +8,13 @@ $--img-chap-height: clamp(6rem, 15vw, 15rem);
 $graphic-height: calc(100vh - #{$nav-height});
 
 .accent_green {
-  color: $highlight-green
+  color: $highlight-aquamarine;
 }
 .accent_blue {
-  color: $highlight-blue
+  color: $highlight-blue;
 }
 .accent_orange {
-  color: $highlight-orange
+  color: $highlight-orange;
 }
 .text_large {
   font-size: 15px;
@@ -139,7 +139,7 @@ img.chap {
 .line {
   width: 100%;
   height: 3px;
-  background-color: $highlight-blue;
+  background-color: $highlight-aquamarine;
   margin-top: 15px !important;
   margin-bottom: 20px !important;
 }

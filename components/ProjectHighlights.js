@@ -1,21 +1,48 @@
-import React from 'react'
-import styles from '../styles/ProjectHighlights.module.css'
-import ProjectCard from './ProjectCard'
+import React from "react";
+import Link from "next/link";
+import styles from "../styles/ProjectHighlights.module.css";
+import ProjectCard from "./ProjectCard";
 
 const ProjectHighlights = ({ highlightProjects }) => {
   return (
-    <div className={styles.container} id='projects' >
+    <div className={styles.container} id="projects">
       <h1>Notable Projects</h1>
-      <br/>
+      <br />
       <div className={styles.project_container}>
-        {
-          highlightProjects !== undefined && highlightProjects.map(({ projectImageName, projectTitle, tags, links, desc, descLong, sections }, index) => (
-            <ProjectCard  key={index} projectImageName={projectImageName} title={projectTitle} tags={tags} links={links} desc={desc} descLong={descLong} sections={sections} />
-          ))
-          }
+        {highlightProjects !== undefined &&
+          highlightProjects.map(
+            (
+              {
+                projectImageName,
+                projectTitle,
+                tags,
+                links,
+                desc,
+                descLong,
+                sections,
+              },
+              index
+            ) => (
+              <ProjectCard
+                key={index}
+                projectImageName={projectImageName}
+                title={projectTitle}
+                tags={tags}
+                links={links}
+                desc={desc}
+                descLong={descLong}
+                sections={sections}
+              />
+            )
+          )}
       </div>
+      <Link href="/projects" passHref>
+        <a className={styles.more_projects}>
+          <h2>See more of my projects</h2>
+        </a>
+      </Link>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectHighlights
+export default ProjectHighlights;
