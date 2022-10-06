@@ -8,7 +8,6 @@ const ProjectCardDesc = ({ heading, content }) => {
         {content.map((section, index) => (
           <React.Fragment key={index}>
             <p>{section}</p>
-            <br />
           </React.Fragment>
         ))}
         <br />

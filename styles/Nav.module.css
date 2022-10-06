@@ -48,7 +48,7 @@
   cursor: pointer;
 }
 .nav ul li:hover {
-  color: lightblue;
+  color: #44C295;
 }
 
 .nav ul li {
@@ -83,7 +83,7 @@ ul.social-links li {
   margin-bottom: auto;
 }
 .info-icon:hover {
-  color: lightblue;
+  color: #44C295;
   transition: 0.2s;
 }
 

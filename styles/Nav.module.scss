@@ -44,7 +44,7 @@
   list-style: none;
   cursor: pointer;
   li:hover {
-    color: lightblue;
+    color: $highlight-aquamarine;
   }
 }
 
@@ -57,6 +57,10 @@
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.nav a:hover {
+  // color: $highlight-aquamarine;
 }
 
 ul.social-links {
@@ -81,7 +85,7 @@ ul.social-links {
   margin-top: auto;
   margin-bottom: auto;
   &:hover {
-    color: lightblue;
+    color: $highlight-aquamarine;
     transition: .2s;
   }
 }

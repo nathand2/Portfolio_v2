@@ -17,8 +17,8 @@ const Landing = () => {
         <div className={styles.content_container}>
           <h1 className={`${styles.left}`}>Hey</h1>
           <h1>
-            I&apos;m <span className={styles.accent_blue}>N</span>athan{" "}
-            <span className={styles.accent_blue}>D</span>ong
+            I&apos;m <span className={styles.accent_green}>Nathan</span>{" "}
+            <span className={styles.accent_green}>Dong</span>
           </h1>
           <div className={styles.line} />
           <h6>A good Software Developer trying to become a great one.</h6>

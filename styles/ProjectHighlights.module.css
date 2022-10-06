@@ -16,4 +16,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.more_projects {
+  color: white;
+  text-decoration: underline;
 }/*# sourceMappingURL=ProjectHighlights.module.css.map */

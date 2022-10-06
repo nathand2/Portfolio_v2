@@ -33,6 +33,13 @@ const Nav = () => {
           </li>
           <li>
             {
+              <Link href="/projects" className="header-link" passHref>
+                <a>Projects</a>
+              </Link>
+            }
+          </li>
+          <li>
+            {
               <Link href="/about" className="header-link" passHref>
                 <a>About Me</a>
               </Link>

@@ -1,6 +1,7 @@
 import styles from '../styles/ProjectCard.module.css'
 import React from 'react'
 import Image from "next/image";
+import { motion } from "framer-motion"
 
 import ProjectCardDesc from './ProjectCardDesc'
 
@@ -16,7 +17,12 @@ const ProjectCard = ({
   sections
 }) => {
   return (
-    <div className={styles.project_desc_container}>
+    <motion.div 
+    initial={{ opacity: 0, scale: 0.5 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5 }}
+    className={styles.project_desc_container}>
       <div className={styles.image_container} >
         <Image src={`/${projectImageName}`} className={styles.preview} alt={projectImageName} layout='fill' />
       </div>
@@ -43,7 +49,7 @@ const ProjectCard = ({
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
