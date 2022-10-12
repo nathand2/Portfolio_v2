@@ -1,6 +1,8 @@
 .container {
   /* padding: 0 2rem; */
   background-color: #090C18;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 main.main div {

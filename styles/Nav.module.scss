@@ -2,35 +2,41 @@
 @import 'size';
 @import 'color';
 
-.container {
-  
-}
+$nav-icon-width: 25px; 
+$nav-icon-height: 25px;
+$nav-logo-width: 40px; // Width set in component <Image> element
 
 .nav {
-  @media only screen and (max-width: 1050px) {
-    display: none;
-  }
+  // @media only screen and (max-width: 1050px) {
+  //   display: none;
+  // }
   position: fixed !important;
   height: 100vh;
   width: $nav-width;
-  padding: 10px;
+  // width: $nav-width-extended;
   background: #090C18;
   // background: orange;
   color: #D7E2E1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   z-index: 20 !important;
+  transition: width .5s;
+  overflow-x:hidden;
+
+  .nav_titles {
+    display: none;
+    overflow: hidden;
+  }
+
+  // &:hover {
+  //   width: $nav-width-extended;
+  //   .nav_titles {
+  //     display: block;
+  //   }
+  // }
 }
 
 .nav_menu {
-  @media only screen and (max-width: 1049px) {
-    display: flex;
-  }
-  @media only screen and (min-width: 1050px) {
-    display: none;
-  }
   height: $nav-height;
   width: 100%;
   padding: 10px;
@@ -48,8 +54,9 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
+  margin-left: calc(($nav-width / 2) - ($nav-icon-width / 2));
   list-style: none;
   cursor: pointer;
   li:hover {
@@ -59,13 +66,21 @@
 
 .icon {
   height: 30px;
-  width: 30px;
+  width: $nav-icon-width;
 }
 
 .nav ul li {
-  // margin: 5px 25px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  a {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+    h1 {
+      margin-left: 20px;
+    }
+  }
 }
 .nav ul li h3 {
   font-weight: 400;
@@ -74,14 +89,10 @@
   margin-bottom: 10px;
 }
 
-.nav a:hover {
-  // color: $highlight-aquamarine;
-}
-
 ul.social-links {
   li {
-    width: 20px;
-    height: 20px;
+    width: $nav-icon-width;
+    height: $nav-icon-height;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -96,8 +107,8 @@ ul.social-links {
 }
 
 .info-icon {
-  width: 20px;
-  height: 20px;
+  width: $nav-icon-width;
+  height: $nav-icon-height;
   cursor: pointer;
   margin-top: auto;
   margin-bottom: auto;
@@ -105,6 +116,12 @@ ul.social-links {
     color: $highlight-aquamarine;
     transition: .2s;
   }
+}
+
+.logo_container {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: calc(($nav-width / 2) - ($nav-logo-width / 2));
 }
 
 .logo-main {

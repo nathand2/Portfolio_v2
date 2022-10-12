@@ -3,19 +3,17 @@
   position: fixed !important;
   height: 100vh;
   width: 100px;
-  padding: 10px;
   background: #090C18;
   color: #D7E2E1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   z-index: 20 !important;
+  transition: width 0.5s;
+  overflow-x: hidden;
 }
-@media only screen and (max-width: 1050px) {
-  .nav {
-    display: none;
-  }
+.nav .nav_titles {
+  display: none;
+  overflow: hidden;
 }
 
 .nav_menu {
@@ -30,24 +28,13 @@
   position: relative;
   z-index: 20 !important;
 }
-@media only screen and (max-width: 1049px) {
-  .nav_menu {
-    display: flex;
-  }
-}
-@media only screen and (min-width: 1050px) {
-  .nav_menu {
-    display: none;
-  }
-}
 
 .nav ul {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  justify-content: center;
-  align-items: center;
+  margin-left: 37.5px;
   list-style: none;
   cursor: pointer;
 }
@@ -57,12 +44,21 @@
 
 .icon {
   height: 30px;
-  width: 30px;
+  width: 25px;
 }
 
 .nav ul li {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.nav ul li a {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  align-items: center;
+}
+.nav ul li a h1 {
+  margin-left: 20px;
 }
 
 .nav ul li h3 {
@@ -73,8 +69,8 @@
 }
 
 ul.social-links li {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -88,8 +84,8 @@ ul.social-links li {
 }
 
 .info-icon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   margin-top: auto;
   margin-bottom: auto;
@@ -97,6 +93,12 @@ ul.social-links li {
 .info-icon:hover {
   color: #44C295;
   transition: 0.2s;
+}
+
+.logo_container {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 30px;
 }
 
 .logo-main {
