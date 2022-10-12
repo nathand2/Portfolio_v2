@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Landing.module.css";
 import { HiOutlineChevronDown } from "react-icons/hi";
@@ -6,13 +6,13 @@ import { HiOutlineChevronDown } from "react-icons/hi";
 const Landing = () => {
   return (
     <div className={styles.container}>
-      <Image
+      {/* <Image
         src="content-bg.jpg"
         className={styles.graphic}
         alt="vancouver, night"
         layout="fill"
         priority
-      />
+      /> */}
       <div className={styles.overlay}>
         <div className={styles.content_container}>
           <h1 className={`${styles.left}`}>Hey</h1>
