@@ -21,7 +21,8 @@ const Landing = () => {
             <span className={styles.accent_green}>Dong</span>
           </h1>
           <div className={styles.line} />
-          <h6>A good Software Developer trying to become a great one.</h6>
+          <h6>A <span className={styles.accent_green}>good software developer</span></h6>
+          <h6>trying to become <span className={styles.accent_green}>a great one.</span></h6>
           <br />
         </div>
       </div>

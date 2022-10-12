@@ -86,7 +86,7 @@ img.graphic {
   font-size: clamp(1rem, 5vw, 12rem);
 }
 .content_container h6 {
-  font-size: clamp(0.7rem, 1vw, 1rem);
+  font-size: 2rem;
 }
 
 img.chap {

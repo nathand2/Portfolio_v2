@@ -49,7 +49,7 @@ const AboutMe = () => {
         <br />
         <h2>
           I love technology and I love gaming! Titles I love are Valorant,
-          Modern Warefare, Rainbow 6 Siege, Sea of Thieves, Minecraft, Age of Empires II and more.
+          Modern Warfare, Rainbow 6 Siege, Sea of Thieves, Minecraft, Age of Empires II and more.
           I&apos;ve been playing video games all my life and I don&apos;t plan
           to stop anytime soon.
         </h2>
