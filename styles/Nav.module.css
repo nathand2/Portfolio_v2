@@ -43,7 +43,7 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  margin-left: 37.5px;
+  margin-left: 40px;
   list-style: none;
   cursor: pointer;
 }
@@ -52,13 +52,13 @@
 }
 
 .icon {
-  height: 30px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
 }
 
 .nav ul li {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .nav ul li a {
   display: grid;
@@ -72,14 +72,14 @@
 
 .nav ul li a h1 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 ul.social-links li {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -93,8 +93,8 @@ ul.social-links li {
 }
 
 .info-icon {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   margin-top: auto;
   margin-bottom: auto;

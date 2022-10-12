@@ -2,8 +2,8 @@
 @import 'size';
 @import 'color';
 
-$nav-icon-width: 25px; 
-$nav-icon-height: 25px;
+$nav-icon-width: 20px; 
+$nav-icon-height: 20px;
 $nav-logo-width: 40px; // Width set in component <Image> element
 
 .nav {
@@ -68,13 +68,13 @@ $nav-logo-width: 40px; // Width set in component <Image> element
 }
 
 .icon {
-  height: 30px;
+  height: $nav-icon-height;
   width: $nav-icon-width;
 }
 
 .nav ul li {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   a {
     display: grid;
     align-items: center;
@@ -87,7 +87,7 @@ $nav-logo-width: 40px; // Width set in component <Image> element
 }
 .nav ul li a h1 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
