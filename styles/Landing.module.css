@@ -20,7 +20,7 @@
 }
 
 .container {
-  height: calc(100vh - 70px);
+  height: 100vh;
   width: 100%;
   position: relative;
   box-sizing: content-box;
@@ -33,7 +33,7 @@ img.graphic {
      object-fit: cover;
   top: 70px;
   width: 100%;
-  height: calc(100vh - 70px);
+  height: 100vh;
   animation: fadeIn 10s;
   -webkit-animation: fadeIn 10s;
   -moz-animation: fadeIn 10s;
@@ -59,9 +59,9 @@ img.graphic {
 }
 .overlay {
   width: 100%;
-  height: calc(100vh - 70px);
-  background: rgb(9, 12, 24);
-  background: linear-gradient(0deg, rgb(9, 12, 24) 1%, rgba(9, 12, 24, 0.6) 100%);
+  height: 100vh;
+  background-color: #090c18;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%2392a0ac' fill-opacity='0.11'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
   z-index: 11;
   position: absolute;
   color: white;
@@ -86,7 +86,7 @@ img.graphic {
   font-size: clamp(1rem, 5vw, 12rem);
 }
 .content_container h6 {
-  font-size: clamp(0.7rem, 1vw, 1rem);
+  font-size: 2rem;
 }
 
 img.chap {

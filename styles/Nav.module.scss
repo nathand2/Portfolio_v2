@@ -2,29 +2,46 @@
 @import 'size';
 @import 'color';
 
+$nav-icon-width: 25px; 
+$nav-icon-height: 25px;
+$nav-logo-width: 40px; // Width set in component <Image> element
+
 .nav {
-  @media only screen and (max-width: 1050px) {
-    display: none;
-  }
-  height: $nav-height;
-  width: 100%;
-  padding: 10px;
+  // @media only screen and (max-width: 1050px) {
+  //   display: none;
+  // }
+  position: fixed !important;
+  height: 100vh;
+  width: $nav-width;
+  // width: $nav-width-extended;
   background: #090C18;
+  // background: orange;
   color: #D7E2E1;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
+  flex-direction: column;
   z-index: 20 !important;
+  transition: width .5s;
+  overflow-x:hidden;
+
+  .nav_titles {
+    // display: none;
+    visibility: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  &:hover {
+    width: $nav-width-extended;
+    .nav_titles {
+      // display: block;
+      visibility: visible;
+    }
+  }
 }
 
 .nav_menu {
-  @media only screen and (max-width: 1049px) {
-    display: flex;
-  }
-  @media only screen and (min-width: 1050px) {
-    display: none;
-  }
   height: $nav-height;
   width: 100%;
   padding: 10px;
@@ -39,8 +56,10 @@
 
 .nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-left: calc(($nav-width / 2) - ($nav-icon-width / 2));
   list-style: none;
   cursor: pointer;
   li:hover {
@@ -48,25 +67,35 @@
   }
 }
 
-.nav ul li {
-  margin: 5px 25px;
-  
+.icon {
+  height: 30px;
+  width: $nav-icon-width;
 }
-.nav ul li h3 {
+
+.nav ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  a {
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+    grid-template-columns: 1fr 5fr;
+    h1 {
+      margin-left: 20px;
+    }
+  }
+}
+.nav ul li a h1 {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.nav a:hover {
-  // color: $highlight-aquamarine;
-}
-
 ul.social-links {
   li {
-    width: 20px;
-    height: 20px;
+    width: $nav-icon-width;
+    height: $nav-icon-height;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -76,11 +105,13 @@ ul.social-links {
   margin-left: auto;  /* Push to right */
   font-weight: 300;
   list-style: none;
+  position:absolute;
+  bottom:20px;
 }
 
 .info-icon {
-  width: 20px;
-  height: 20px;
+  width: $nav-icon-width;
+  height: $nav-icon-height;
   cursor: pointer;
   margin-top: auto;
   margin-bottom: auto;
@@ -88,6 +119,12 @@ ul.social-links {
     color: $highlight-aquamarine;
     transition: .2s;
   }
+}
+
+.logo_container {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: calc(($nav-width / 2) - ($nav-logo-width / 2));
 }
 
 .logo-main {

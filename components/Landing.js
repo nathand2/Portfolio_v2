@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Landing.module.css";
 import { HiOutlineChevronDown } from "react-icons/hi";
@@ -6,13 +6,13 @@ import { HiOutlineChevronDown } from "react-icons/hi";
 const Landing = () => {
   return (
     <div className={styles.container}>
-      <Image
+      {/* <Image
         src="content-bg.jpg"
         className={styles.graphic}
         alt="vancouver, night"
         layout="fill"
         priority
-      />
+      /> */}
       <div className={styles.overlay}>
         <div className={styles.content_container}>
           <h1 className={`${styles.left}`}>Hey</h1>
@@ -21,7 +21,8 @@ const Landing = () => {
             <span className={styles.accent_green}>Dong</span>
           </h1>
           <div className={styles.line} />
-          <h6>A good Software Developer trying to become a great one.</h6>
+          <h6>A <span className={styles.accent_green}>good software developer</span></h6>
+          <h6>trying to become <span className={styles.accent_green}>a great one.</span></h6>
           <br />
         </div>
       </div>
