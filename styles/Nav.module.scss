@@ -2,19 +2,25 @@
 @import 'size';
 @import 'color';
 
+.container {
+  
+}
+
 .nav {
   @media only screen and (max-width: 1050px) {
     display: none;
   }
-  height: $nav-height;
-  width: 100%;
+  position: fixed !important;
+  height: 100vh;
+  width: $nav-width;
   padding: 10px;
   background: #090C18;
+  // background: orange;
   color: #D7E2E1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  position: relative;
   z-index: 20 !important;
 }
 
@@ -39,6 +45,9 @@
 
 .nav ul {
   display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -48,9 +57,15 @@
   }
 }
 
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
 .nav ul li {
-  margin: 5px 25px;
-  
+  // margin: 5px 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .nav ul li h3 {
   font-weight: 400;
@@ -76,6 +91,8 @@ ul.social-links {
   margin-left: auto;  /* Push to right */
   font-weight: 300;
   list-style: none;
+  position:absolute;
+  bottom:20px;
 }
 
 .info-icon {

@@ -1,8 +1,12 @@
 import Link from "next/link";
 import { useState } from "react";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail, HiMenu } from "react-icons/hi";
+import { AiFillFile } from "react-icons/ai";
+import { FaGithub, FaLinkedin, FaHome, FaUserAlt } from "react-icons/fa";
+import { HiOutlineMail, HiMenu, HiEye } from "react-icons/hi";
+import { MdSchool } from "react-icons/md";
+import { GoFileDirectory } from "react-icons/go";
+
 
 import navStyles from "../styles/Nav.module.css";
 
@@ -28,27 +32,35 @@ const Nav = () => {
         <ul className={navStyles["links-list"]}>
           <li>
             <Link href="/" className="header-link" passHref>
-              <a>Home</a>
+              <a>
+                <FaHome className={navStyles.icon} />
+              </a>
             </Link>
           </li>
           <li>
             {
               <Link href="/projects" className="header-link" passHref>
-                <a>Projects</a>
+                <a>
+                  <GoFileDirectory className={navStyles.icon} />
+                </a>
               </Link>
             }
           </li>
           <li>
             {
               <Link href="/about" className="header-link" passHref>
-                <a>About Me</a>
+                <a>
+                  <FaUserAlt className={navStyles.icon} />
+                </a>
               </Link>
             }
           </li>
           <li>
             {
               <Link href="/education" className="header-link" passHref>
-                <a>Education</a>
+                <a>
+                <MdSchool className={navStyles.icon} />
+                </a>
               </Link>
             }
           </li>
@@ -58,13 +70,18 @@ const Nav = () => {
               className="header-link"
               passHref
             >
-              <a>Resume</a>
+              <a>
+              <AiFillFile className={navStyles.icon} />
+              </a>
             </Link>
           </li>
           <li>
             {
               <Link href="/eyes" className="header-link" passHref>
-                <a>20-20-20</a>
+                <a>
+                  <HiEye className={navStyles.icon} />
+                  {/* 20-20-20 */}
+                </a>
               </Link>
             }
           </li>
