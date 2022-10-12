@@ -24,16 +24,21 @@ $nav-logo-width: 40px; // Width set in component <Image> element
   overflow-x:hidden;
 
   .nav_titles {
-    display: none;
+    // display: none;
+    visibility: hidden;
+    white-space: nowrap;
     overflow: hidden;
+    grid-row: 1;
+    grid-column: 2;
   }
 
-  // &:hover {
-  //   width: $nav-width-extended;
-  //   .nav_titles {
-  //     display: block;
-  //   }
-  // }
+  &:hover {
+    width: $nav-width-extended;
+    .nav_titles {
+      // display: block;
+      visibility: visible;
+    }
+  }
 }
 
 .nav_menu {
@@ -54,8 +59,6 @@ $nav-logo-width: 40px; // Width set in component <Image> element
   flex-direction: column;
   margin: 0;
   padding: 0;
-  // justify-content: center;
-  // align-items: center;
   margin-left: calc(($nav-width / 2) - ($nav-icon-width / 2));
   list-style: none;
   cursor: pointer;
@@ -73,18 +76,18 @@ $nav-logo-width: 40px; // Width set in component <Image> element
   margin-top: 10px;
   margin-bottom: 10px;
   a {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
+    display: grid;
     align-items: center;
+    overflow: hidden;
+    grid-template-columns: 1fr 5fr;
     h1 {
       margin-left: 20px;
     }
   }
 }
-.nav ul li h3 {
+.nav ul li a h1 {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
   margin-top: 10px;
   margin-bottom: 10px;
 }

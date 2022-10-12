@@ -33,6 +33,7 @@ const Nav = () => {
             <Link href="/" className="header-link" passHref>
               <a>
                 <FaHome className={navStyles.icon} />
+                  <h1 className={navStyles.nav_titles}>Home</h1>
               </a>
             </Link>
           </li>
@@ -41,6 +42,7 @@ const Nav = () => {
               <Link href="/projects" className="header-link" passHref>
                 <a>
                   <GoFileDirectory className={navStyles.icon} />
+                  <h1 className={navStyles.nav_titles}>Projects</h1>
                 </a>
               </Link>
             }
@@ -50,6 +52,7 @@ const Nav = () => {
               <Link href="/about" className="header-link" passHref>
                 <a>
                   <FaUserAlt className={navStyles.icon} />
+                  <h1 className={navStyles.nav_titles}>About Me</h1>
                 </a>
               </Link>
             }
@@ -59,6 +62,7 @@ const Nav = () => {
               <Link href="/education" className="header-link" passHref>
                 <a>
                   <MdSchool className={navStyles.icon} />
+                  <h1 className={navStyles.nav_titles}>Education</h1>
                 </a>
               </Link>
             }
@@ -71,6 +75,7 @@ const Nav = () => {
             >
               <a>
                 <AiFillFile className={navStyles.icon} />
+                  <h1 className={navStyles.nav_titles}>Resume</h1>
               </a>
             </Link>
           </li>

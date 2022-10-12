@@ -5,7 +5,8 @@
 $--img-chap-width: clamp(6rem, 15vw, 15rem);
 $--img-chap-height: clamp(6rem, 15vw, 15rem);
 
-$graphic-height: calc(100vh - #{$nav-height});
+// $graphic-height: calc(100vh - #{$nav-height});
+$graphic-height: 100vh;
 
 .accent_green {
   color: $highlight-aquamarine;
