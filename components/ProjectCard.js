@@ -24,7 +24,7 @@ const ProjectCard = ({
     transition={{ duration: 0.5 }}
     className={styles.project_desc_container}>
       <div className={styles.image_container} >
-        <Image src={`/${projectImageName}`} className={styles.preview} alt={projectImageName} layout='fill' />
+        <Image src={`/${projectImageName}`} className={styles.preview} alt={projectImageName} fill />
       </div>
       <div>
         <h1>{title}</h1>

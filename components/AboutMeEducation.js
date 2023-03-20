@@ -12,15 +12,13 @@ const AboutMeEducation = () => {
         transition={{ duration: 0.5 }}
         className={styles.aboutme_container}
       >
-        <Link href="/about" passHref>
-          <a>
+        <Link href="/about">
             <h1 className={`${styles.text_large} ${styles.title_about}`}>
               About Me
             </h1>
             <p className={`${styles.text_small} ${styles.text_about}`}>
               Learn more about who I am as a person and as a developer.
             </p>
-          </a>
         </Link>
       </motion.div>
       <motion.div
@@ -30,8 +28,7 @@ const AboutMeEducation = () => {
         transition={{ duration: 0.5 }}
         className={styles.education_container}
       >
-        <Link href="/education" passHref>
-          <a>
+        <Link href="/education">
             <h1 className={`${styles.text_large} ${styles.title_education}`}>
               Education
             </h1>
@@ -39,7 +36,6 @@ const AboutMeEducation = () => {
               Learn more about my time at British Columbia Institute of
               Technology.
             </p>
-          </a>
         </Link>
       </motion.div>
       <div className={styles.line}></div>
