@@ -25,7 +25,7 @@ const Landing = () => {
           <br />
         </div>
       </div>
-      <a href="/#projects">
+      <a href="#projects">
           <HiOutlineChevronDown className={styles.arrow} />
       </a>
     </div>
