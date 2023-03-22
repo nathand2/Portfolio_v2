@@ -22,7 +22,7 @@ const Nav = () => {
       <nav className={navStyles.nav}>
         <div className={navStyles.logo_container}>
           <Link href="/" className={navStyles["logo-main"]}>
-            <Image src="/logo.png" alt={"logo"} width="40" height="20" />
+            <Image src="/logo.png" alt={"logo"} width="40" height="20" priority />
           </Link>
         </div>
 
