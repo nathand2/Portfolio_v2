@@ -1,9 +1,12 @@
 import Projects from '../components/Projects'
+import Head from 'next/head'
 
 const Home = ({ projects }) => {
   return (
     <div>
-      projects
+      <Head>
+        <title>20 20 20 Rule</title>
+      </Head>
       <Projects projects={projects} />
     </div>
   )

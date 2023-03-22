@@ -10,7 +10,6 @@ const Landing = () => {
         src="content-bg.jpg"
         className={styles.graphic}
         alt="vancouver, night"
-        layout="fill"
         priority
       /> */}
       <div className={styles.overlay}>
@@ -26,11 +25,9 @@ const Landing = () => {
           <br />
         </div>
       </div>
-      <Link href="/#projects" passHref>
-        <a>
+      <a href="/#projects">
           <HiOutlineChevronDown className={styles.arrow} />
-        </a>
-      </Link>
+      </a>
     </div>
   );
 };

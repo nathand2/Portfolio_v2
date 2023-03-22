@@ -36,10 +36,8 @@ const ProjectHighlights = ({ highlightProjects }) => {
             )
           )}
       </div>
-      <Link href="/projects" passHref>
-        <a className={styles.more_projects}>
+      <Link href="/projects">
           <h2>See more of my projects</h2>
-        </a>
       </Link>
     </div>
   );

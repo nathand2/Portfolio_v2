@@ -19,7 +19,8 @@ img.preview {
   display: flex;
   position: relative;
   flex-direction: column;
-  margin: 2rem;
+  // margin: 2rem;
+  margin-bottom: 10px !important;
   width: 30rem !important;
   border-radius: 2px;
   overflow: hidden;
