@@ -30,9 +30,9 @@ const ProjectCard = ({
         <h1>{title}</h1>
         <div>
           {
-            sections.map(({heading, content}, index) => (
+            sections ? sections.map(({heading, content}, index) => (
               <ProjectCardDesc heading={heading} content={content} key={index} />
-            ))
+            )) : <></>
           }
         </div>
         <div className={styles.project_links}>

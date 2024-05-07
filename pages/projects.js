@@ -1,7 +1,7 @@
 import Projects from '../components/Projects'
 import Head from 'next/head'
 
-const Home = ({ projects }) => {
+const Home = ({ projects = [] }) => {
   return (
     <div>
       <Head>
@@ -14,8 +14,8 @@ const Home = ({ projects }) => {
 
 // Function runs at build time
 export async function getStaticProps() {
-  const res2 = await fetch(`https://api.nathandong.com/projects/projects`)
-  const projects = await res2.json()
+  const res2 = await fetch(`http://localhost:3000/api/projects`);
+  const projects = await res2.json();
 
   return {
     props: {

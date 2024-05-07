@@ -5,8 +5,9 @@ import AboutMeEducation from '../components/AboutMeEducation'
 import Skills from '../components/Skills'
 import Testimonials from '../components/Testimonials'
 
-const Home = ({ highlightProjects }) => {
+const Home = ({ highlightProjects = [] }) => {
 
+  
   return (
     <div>
       <Head>
@@ -23,8 +24,8 @@ const Home = ({ highlightProjects }) => {
 
 // Function runs at build time
 export async function getStaticProps() {
-  const res2 = await fetch(`https://api.nathandong.com/projects/highlights`)
-  const highlightProjects = await res2.json()
+  const res = await fetch(`http://localhost:3000/api/highlightprojects`)
+  const highlightProjects = await res.json()
 
   return {
     props: {
