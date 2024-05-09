@@ -24,7 +24,7 @@ const ProjectCard = ({
     transition={{ duration: 0.5 }}
     className={styles.project_desc_container}>
       <div className={styles.image_container} >
-        <Image src={`https://cdn.jsdelivr.net/gh/nathand2/Portfolio_v2@master/public/${projectImageName}`} className={styles.preview} alt={projectImageName} fill />
+        <Image src={`https://cdn.jsdelivr.net/gh/nathand2/Portfolio_v2@main/public/${projectImageName}`} className={styles.preview} alt={projectImageName} fill />
       </div>
       <div>
         <h1>{title}</h1>
