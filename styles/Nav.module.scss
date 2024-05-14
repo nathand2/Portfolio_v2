@@ -14,7 +14,7 @@ $nav-logo-width: 40px; // Width set in component <Image> element
   height: 100vh;
   width: $nav-width;
   // width: $nav-width-extended;
-  background: #090C18;
+  // background: #ff000000 !important;
   // background: orange;
   color: #D7E2E1;
   display: flex;
@@ -25,18 +25,20 @@ $nav-logo-width: 40px; // Width set in component <Image> element
 
   .nav_titles {
     // display: none;
-    visibility: hidden;
+    opacity: 0;
     white-space: nowrap;
     overflow: hidden;
     grid-row: 1;
     grid-column: 2;
+    transition: opacity .2s;
   }
 
   &:hover {
     width: $nav-width-extended;
     .nav_titles {
       // display: block;
-      visibility: visible;
+      // visibility: visible;
+      opacity: 1;
     }
   }
 }
@@ -45,7 +47,7 @@ $nav-logo-width: 40px; // Width set in component <Image> element
   height: $nav-height;
   width: 100%;
   padding: 10px;
-  background: #090C18;
+  // background: #090C1810;
   color: #D7E2E1;
   display: flex;
   align-items: center;
@@ -188,7 +190,7 @@ ul.social-links {
   height: auto;
   display: flex;
   flex-direction: column;
-  background-color: $dark-main !important;
+  // background-color: $dark-main !important;
   color: white;
   z-index: 20 !important;
   overflow: hidden;
@@ -199,7 +201,7 @@ ul.social-links {
   height: 0;
   display: flex;
   flex-direction: column;
-  background-color: $dark-main !important;
+  // background-color: $dark-main !important;
   color: white;
   z-index: 20 !important;
   overflow: hidden;

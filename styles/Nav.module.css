@@ -3,7 +3,6 @@
   position: fixed !important;
   height: 100vh;
   width: 100px;
-  background: #090C18;
   color: #D7E2E1;
   display: flex;
   flex-direction: column;
@@ -12,24 +11,24 @@
   overflow-x: hidden;
 }
 .nav .nav_titles {
-  visibility: hidden;
+  opacity: 0;
   white-space: nowrap;
   overflow: hidden;
   grid-row: 1;
   grid-column: 2;
+  transition: opacity 0.2s;
 }
 .nav:hover {
   width: 300px;
 }
 .nav:hover .nav_titles {
-  visibility: visible;
+  opacity: 1;
 }
 
 .nav_menu {
   height: 70px;
   width: 100%;
   padding: 10px;
-  background: #090C18;
   color: #D7E2E1;
   display: flex;
   align-items: center;
@@ -167,7 +166,6 @@ ul.social-links li {
   height: auto;
   display: flex;
   flex-direction: column;
-  background-color: #090C18 !important;
   color: white;
   z-index: 20 !important;
   overflow: hidden;
@@ -178,7 +176,6 @@ ul.social-links li {
   height: 0;
   display: flex;
   flex-direction: column;
-  background-color: #090C18 !important;
   color: white;
   z-index: 20 !important;
   overflow: hidden;

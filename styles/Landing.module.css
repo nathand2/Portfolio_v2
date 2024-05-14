@@ -25,6 +25,7 @@
   position: relative;
   box-sizing: content-box;
   z-index: 10 !important;
+  text-align: center;
 }
 
 img.graphic {
@@ -49,10 +50,50 @@ img.graphic {
     opacity: 1;
   }
 }
+@keyframes pan {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+.star_container {
+  background: radial-gradient(rgb(249, 181, 51), rgb(215, 147, 23));
+  overflow: hidden;
+  position: relative;
+}
+
+.star_pattern {
+  background-image: url("https://assets.codepen.io/1468070/Star+Pattern+3.svg");
+  background-size: 10%;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  translate: -50% 0%;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  min-width: 1200px;
+  opacity: 0.1;
+  animation: pan 180s linear infinite;
+  will-change: background-position;
+}
+
+.star-gradient-overlay {
+  background: radial-gradient(circle, transparent 75%, rgb(var(rgb(215, 147, 23))));
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: 2;
+}
+
 .overlay {
   width: 100%;
   height: 100vh;
-  background-color: #090c18;
   z-index: 11;
   position: absolute;
   color: white;
@@ -114,7 +155,6 @@ img.chap {
 .line {
   width: 100%;
   height: 3px;
-  background-color: white;
   margin-top: 15px !important;
   margin-bottom: 20px !important;
 }
@@ -122,7 +162,6 @@ img.chap {
 .arrow {
   color: white;
   height: 50px;
-  width: 100%;
   position: absolute;
   bottom: 20px;
   z-index: 15;

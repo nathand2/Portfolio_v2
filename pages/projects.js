@@ -5,7 +5,7 @@ const Home = ({ projects = [] }) => {
   return (
     <div>
       <Head>
-        <title>20 20 20 Rule</title>
+        <title>Projects</title>
       </Head>
       <Projects projects={projects} />
     </div>
@@ -14,7 +14,7 @@ const Home = ({ projects = [] }) => {
 
 // Function runs at build time
 export async function getStaticProps() {
-  const res2 = await fetch(`http://localhost:3000/api/projects`);
+  const res2 = await fetch(`http://localhost:3002/projects`);
   const projects = await res2.json();
 
   return {

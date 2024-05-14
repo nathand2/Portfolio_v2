@@ -21,7 +21,7 @@ const ProjectCard = ({
     initial={{ opacity: 0, scale: 0.5 }}
     whileInView={{ opacity: 1, scale: 1 }}
     viewport={{ once: true }}
-    transition={{ duration: 0.5 }}
+    transition={{ duration: 1 }}
     className={styles.project_desc_container}>
       <div className={styles.image_container} >
         <Image src={`https://cdn.jsdelivr.net/gh/nathand2/Portfolio_v2@main/public/${projectImageName}`} className={styles.preview} alt={projectImageName} fill />

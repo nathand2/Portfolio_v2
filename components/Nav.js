@@ -57,7 +57,7 @@ const Nav = () => {
               </Link>
             }
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/Nathan_Dong_Resume.pdf"
               target="_blank"
@@ -67,7 +67,7 @@ const Nav = () => {
               <AiFillFile className={navStyles.icon} />
               <h1 className={navStyles.nav_titles}>Resume</h1>
             </Link>
-          </li>
+          </li> */}
           <li>
             {
               <Link href="/eyes" className="header-link">
