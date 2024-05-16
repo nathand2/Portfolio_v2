@@ -4,7 +4,12 @@ import ProjectHighlights from '../components/ProjectHighlights'
 import AboutMeEducation from '../components/AboutMeEducation'
 import Skills from '../components/Skills'
 import Testimonials from '../components/Testimonials'
+
+import styles from "../styles/Index.module.css";
 import auroralStyles from "../styles/auroral.module.css";
+
+const fs = require('fs').promises; // Import fs promises API
+
 import { useEffect, useState } from 'react'
 
 const Home = ({ highlightProjects = [] }) => {
@@ -19,27 +24,31 @@ const Home = ({ highlightProjects = [] }) => {
   ];
 
   const [currStyle, setCurrStyle] = useState(null)
-  const [currStyleIndex, setCurrStyleIndex] = useState(0)
+
+  const themeOffset = 2;
+  const themeChangeTime = 15;
 
   useEffect(() => {
-    var now = new Date();
-    console.log(now);
-    // const newStyleClassName = auroralStyleArr[Math.floor(now.getHours() / 6)];
-    transitionAuroraStyle(currStyleIndex);
+    // var now = new Date();
+    // let currStyleIndex = Math.floor(now.getHours() / 6) + themeOffset;
+    // transitionAuroraStyle(currStyleIndex);
+
+    // Random theme
+    
+    // transitionAuroraStyle(Math.floor(Math.random() * 6));
+    transitionAuroraStyle(0);
   }, [])
 
   const transitionAuroraStyle = async (newStyleIndex) => {
     console.log(newStyleIndex)
     setCurrStyle(auroralStyleArr[newStyleIndex]);
 
-    setTimeout(() => transitionAuroraStyle((newStyleIndex + 1) % auroralStyleArr.length) , 500 * 10)
+    setTimeout(() => transitionAuroraStyle((newStyleIndex + 1) % auroralStyleArr.length) , 500 * themeChangeTime)
     // await setTimeout(transitionAuroraStyle((newStyleIndex + 1) % auroralStyleArr.length), 1000 * 10)
   };
   
   return (
-    <div style={{
-      width: "100%"
-    }}>
+    <div className={styles.container}>
       <div className={`${auroralStyles['container']}`}>
         <div className={`${auroralStyles['auroral-northern']}`} style={{opacity: currStyle == "auroral-northern" ? 1 : 0}}></div>
         <div className={`${auroralStyles['auroral-northern-intense']}`} style={{opacity: currStyle == "auroral-northern-intense" ? 1 : 0}}></div>
@@ -54,19 +63,28 @@ const Home = ({ highlightProjects = [] }) => {
       <Head>
         <title>by Nathan</title>
       </Head>
-      <Landing />
-      <ProjectHighlights highlightProjects={highlightProjects} />
-      <Skills />
-      <AboutMeEducation />
-      <Testimonials />
+      <section className={styles.section}>
+        <Landing />
+      </section>
+      <section className={styles.section}>
+        <ProjectHighlights highlightProjects={highlightProjects} />
+      </section>
+      <section className={styles.section}>
+        <Skills />
+        <AboutMeEducation />
+        <Testimonials />
+      </section>
     </div>
   )
 }
 
 // Function runs at build time
 export async function getStaticProps() {
-  const res = await fetch(`http://localhost:3002/highlights`)
-  const highlightProjects = await res.json()
+  // const res = await fetch(`http://localhost:3002/highlights`)
+  // const highlightProjects = await res.json()
+  const data = await fs.readFile('data.json', 'utf8');
+  const jsonData = JSON.parse(data);
+  const highlightProjects = jsonData.highlightProjectData;
 
   return {
     props: {

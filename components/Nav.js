@@ -41,22 +41,22 @@ const Nav = () => {
               </Link>
             }
           </li>
-          <li>
+          {/* <li>
             {
               <Link href="/about" className="header-link">
                 <FaUserAlt className={navStyles.icon} />
                 <h1 className={navStyles.nav_titles}>About Me</h1>
               </Link>
             }
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             {
               <Link href="/education" className="header-link">
                 <MdSchool className={navStyles.icon} />
                 <h1 className={navStyles.nav_titles}>Education</h1>
               </Link>
             }
-          </li>
+          </li> */}
           {/* <li>
             <Link
               href="/Nathan_Dong_Resume.pdf"

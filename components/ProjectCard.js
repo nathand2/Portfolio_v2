@@ -1,11 +1,9 @@
-import styles from '../styles/ProjectCard.module.css'
-import React from 'react'
+import styles from "../styles/ProjectCard.module.css";
+import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
-import ProjectCardDesc from './ProjectCardDesc'
-
-
+import ProjectCardDesc from "./ProjectCardDesc";
 
 const ProjectCard = ({
   projectImageName,
@@ -14,27 +12,32 @@ const ProjectCard = ({
   links,
   desc,
   descLong,
-  sections
+  sections,
 }) => {
   return (
-    <motion.div 
-    initial={{ opacity: 0, scale: 0.5 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    viewport={{ once: true }}
-    transition={{ duration: 1 }}
-    className={styles.project_desc_container}>
-      <div className={styles.image_container} >
-        <Image src={`https://cdn.jsdelivr.net/gh/nathand2/Portfolio_v2@main/public/${projectImageName}`} className={styles.preview} alt={projectImageName} fill />
-      </div>
+    // <motion.div
+    // initial={{ opacity: 0, scale: 0.5 }}
+    // whileInView={{ opacity: 1, scale: 1 }}
+    // viewport={{ once: true }}
+    // transition={{ duration: 1 }}
+    // className={styles.project_desc_container}>
+    <div className={styles.project_card_container}>
       <div>
-        <h1>{title}</h1>
+        <h1 className={styles.project_name}>{title}</h1>
         <div>
-          {
-            sections ? sections.map(({heading, content}, index) => (
-              <ProjectCardDesc heading={heading} content={content} key={index} />
-            )) : <></>
-          }
+          {sections ? (
+            sections.map(({ heading, content }, index) => (
+              <ProjectCardDesc
+                heading={heading}
+                content={content}
+                key={index}
+              />
+            ))
+          ) : (
+            <></>
+          )}
         </div>
+
         <div className={styles.project_links}>
           {links.map(({ name, link, active }, index) =>
             active ? (
@@ -49,7 +52,17 @@ const ProjectCard = ({
           )}
         </div>
       </div>
-    </motion.div>
+      
+      <div className={styles.image_container}>
+          <Image
+            src={`https://cdn.jsdelivr.net/gh/nathand2/Portfolio_v2@main/public/${projectImageName}`}
+            className={styles.preview}
+            alt={projectImageName}
+            fill
+          />
+        </div>
+    </div>
+    // </motion.div>
   );
 };
 

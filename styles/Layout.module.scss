@@ -9,6 +9,9 @@ $layout-min-height: calc(100vh - #{$nav-height});
   z-index: 5;
   // padding-left: $nav-width;
   // padding-right: $nav-width;
+  * {
+    z-index: 5;
+  }
 }
 
 main.main div  {
@@ -27,6 +30,7 @@ main.main div  {
   align-items: center;
   font-size: 1.25rem;
 }
+
 
 .footer {
   display: flex;

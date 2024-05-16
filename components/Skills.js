@@ -3,85 +3,25 @@ import styles from '../styles/Skills.module.css'
 const Skills = () => {
   return (
     <>
+      
       <div className={styles.container}>
-        <h1>Programming Languages</h1>
-        <br />
-        <div className={styles.content_container}>
-          <div className={styles.col_1}>
-            <h2>1000&apos;s of Lines</h2>
-            <ul>
-              <li>
-                Python 🐍
-              </li>
-              <li>
-                Java
-              </li>
-              <li>
-                Javascript
-              </li>
-              <li>
-                C
-              </li>
-            </ul>
+          <div className={styles.twocolumns}>
+            <h2>Languages</h2>
+            Python 🐍, C#, C++, Swift, Java, C, Javascript, Typescript
           </div>
           <div className={styles.col_2}>
-            <h2>100&apos;s of Lines</h2>
-            <ul>
-              <li>
-                Typescript
-              </li>
-              <li>
-                C++
-              </li>
-            </ul>
+            <h2>Web/Mobile</h2>
+            React.js, Next.js, Express.js, Node.js, Angular.ts,
           </div>
-        </div>
-        <br />
-        <h1>Technologies</h1>
-        <br />
-        <div className={styles.content_container}>
           <div className={styles.col_1}>
-            <h2>Confident</h2>
-            <ul>
-              <li>
-                React.js
-              </li>
-              <li>
-                Express.js
-              </li>
-              <li>
-                Node.js
-              </li>
-              <li>
-                MySQL
-              </li>
-            </ul>
+            <h2>Database</h2>
+              MySQL, PostgreSQL
           </div>
-          <div className={styles.col_2}>
-            <h2>Familiar</h2>
-            <ul>
-              <li>
-                Angular.ts
-              </li>
-              <li>
-                Flask
-              </li>
-              <li>
-                Django
-              </li>
-              <li>
-                PostgreSQL
-              </li>
-              <li>Next.js</li>
-            </ul>
+          <div className={styles.twocolumns}>
+            <h2>Methodologies</h2>
+            Agile, Object Oriented Programming, REST Api&apos;s
           </div>
-        </div>
-        <br />
-        <h1>Methodologies</h1>
-        <br />
-        <h4>Agile, Microarchitectures, Rest API&apos;s, Object Oriented Programming</h4>
       </div>
-      <div className={styles.line}></div>
     </>
   )
 }

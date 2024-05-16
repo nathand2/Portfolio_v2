@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 const ProjectHighlights = ({ highlightProjects }) => {
   return (
     <div className={styles.container} id="projects">
-      <h1>Notable Projects</h1>
+      <h1 classname={styles.title}>Project Highlights</h1>
       <br />
       <div className={styles.project_container}>
         {highlightProjects !== undefined &&
@@ -36,9 +36,9 @@ const ProjectHighlights = ({ highlightProjects }) => {
             )
           )}
       </div>
-      <Link href="/projects">
+      {/* <Link href="/projects">
           <h2>See more of my projects</h2>
-      </Link>
+      </Link> */}
     </div>
   );
 };

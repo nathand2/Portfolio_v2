@@ -6,8 +6,7 @@ img.preview {
 }
 
 .image_container {
-  height: 300px;
-  width: 100%;
+  width: auto !important;
   position: relative;
 }
 
@@ -23,15 +22,27 @@ img.preview {
 .project_desc_container h1 {
   font-size: 1.3rem;
 }
-.project_desc_container .project_links {
-  cursor: pointer;
+.project_desc_container p {
+  font-size: 128px;
 }
-.project_desc_container .project_links a {
+
+.project_links a {
   margin-right: 15px;
+  cursor: pointer;
+  font-size: 16px;
 }
-.project_desc_container .link_active {
+
+.project_card_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.link_active {
   color: #0B7ADB;
 }
-.project_desc_container .link_inctive {
+
+.link_inctive {
   color: grey;
 }/*# sourceMappingURL=ProjectCard.module.css.map */

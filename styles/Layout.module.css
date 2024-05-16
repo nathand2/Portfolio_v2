@@ -3,6 +3,9 @@
   background-color: #090C18;
   z-index: 5;
 }
+.container * {
+  z-index: 5;
+}
 
 main.main div {
   width: 100%;

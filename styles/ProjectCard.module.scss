@@ -2,7 +2,7 @@
 @import 'size';
 
 img.preview {
-  // width: 300px;
+  // width: 100%;
 
   border-radius: 2px;
   object-fit: cover;
@@ -10,8 +10,9 @@ img.preview {
 }
 
 .image_container {
-  height: 300px;
-  width: 100%;
+  width: auto !important;
+  // min-height: 300px;
+  // height: 200px;
   position: relative;
 }
 
@@ -28,17 +29,35 @@ img.preview {
   h1 {
     font-size: $--fs-500;
   }
-  .project_links {
-    cursor: pointer;
-    a {
-      margin-right: 15px;
-    }
-  }
 
-  .link_active {
-    color: $highlight-blue;
+
+  p {
+    font-size: 128px;
   }
-  .link_inctive {
-    color: grey;
+}
+
+.project_links {
+  a {
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 16px;
   }
+}
+
+.project_name {
+
+}
+
+.project_card_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.link_active {
+  color: $highlight-blue;
+}
+.link_inctive {
+  color: grey;
 }
