@@ -38,6 +38,11 @@ img.preview {
   gap: 20px;
   padding: 20px;
 }
+@media screen and (max-width: 1000px) {
+  .project_card_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .link_active {
   color: #0B7ADB;

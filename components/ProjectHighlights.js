@@ -23,16 +23,29 @@ const ProjectHighlights = ({ highlightProjects }) => {
               },
               index
             ) => (
-              <ProjectCard
-                key={index}
-                projectImageName={projectImageName}
-                title={projectTitle}
-                tags={tags}
-                links={links}
-                desc={desc}
-                descLong={descLong}
-                sections={sections}
-              />
+              <>
+                <ProjectCard
+                  key={index}
+                  projectImageName={projectImageName}
+                  title={projectTitle}
+                  tags={tags}
+                  links={links}
+                  desc={desc}
+                  descLong={descLong}
+                  sections={sections}
+                />
+                {index != highlightProjects.length - 1 ? (
+                  <svg width="100%" height="10">
+                    <line
+                      x1="0"
+                      y1="5"
+                      x2="100%"
+                      y2="5"
+                      style={{stroke: "white", strokeWidth:2}}
+                    />
+                  </svg>
+                ) : undefined}
+              </>
             )
           )}
       </div>

@@ -23,9 +23,9 @@
   border-width: 2px;
   border-style: solid;
   border-radius: 50vw;
-  padding: 20px; /* Padding around each item */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(31, 68, 63, 0.1); /* Shadow effect */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(31, 68, 63, 0.1);
   position: relative;
 }
 

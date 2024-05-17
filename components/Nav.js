@@ -28,14 +28,14 @@ const Nav = () => {
 
         <ul className={navStyles["links-list"]}>
           <li>
-            <Link href="/" className="header-link">
+            <Link href="/" className={navStyles.header_link}>
               <FaHome className={navStyles.icon} />
               <h1 className={navStyles.nav_titles}>Home</h1>
             </Link>
           </li>
           <li>
             {
-              <Link href="/projects" className="header-link">
+              <Link href="/projects" className={navStyles.header_link}>
                 <GoFileDirectory className={navStyles.icon} />
                 <h1 className={navStyles.nav_titles}>Projects</h1>
               </Link>
@@ -43,7 +43,7 @@ const Nav = () => {
           </li>
           {/* <li>
             {
-              <Link href="/about" className="header-link">
+              <Link href="/about" className={navStyles.header_link}>
                 <FaUserAlt className={navStyles.icon} />
                 <h1 className={navStyles.nav_titles}>About Me</h1>
               </Link>
@@ -51,7 +51,7 @@ const Nav = () => {
           </li> */}
           {/* <li>
             {
-              <Link href="/education" className="header-link">
+              <Link href="/education" className={navStyles.header_link}>
                 <MdSchool className={navStyles.icon} />
                 <h1 className={navStyles.nav_titles}>Education</h1>
               </Link>
@@ -62,7 +62,7 @@ const Nav = () => {
               href="/Nathan_Dong_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="header-link"
+              classNam{navStyles.header_link}
             >
               <AiFillFile className={navStyles.icon} />
               <h1 className={navStyles.nav_titles}>Resume</h1>
@@ -70,7 +70,7 @@ const Nav = () => {
           </li> */}
           <li>
             {
-              <Link href="/eyes" className="header-link">
+              <Link href="/eyes" className={navStyles.header_link}>
                 <HiEye className={navStyles.icon} />
                 <h1 className={navStyles.nav_titles}>20-20-20</h1>
               </Link>

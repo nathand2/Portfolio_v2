@@ -52,15 +52,15 @@ const ProjectCard = ({
           )}
         </div>
       </div>
-      
+
       <div className={styles.image_container}>
-          <Image
-            src={`https://cdn.jsdelivr.net/gh/nathand2/Portfolio_v2@main/public/${projectImageName}`}
-            className={styles.preview}
-            alt={projectImageName}
-            fill
-          />
-        </div>
+        <Image
+          src={`https://cdn.jsdelivr.net/gh/nathand2/Portfolio_v2@main/public/${projectImageName}`}
+          className={styles.preview}
+          alt={projectImageName}
+          fill
+        />
+      </div>
     </div>
     // </motion.div>
   );

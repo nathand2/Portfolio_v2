@@ -11,6 +11,10 @@ $--line-height: 300px;
   // align-items: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  @media screen and (max-width: $screen-small) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
   gap: 20px; /* Gap between grid items */
   padding-left: $nav-width;
   padding-right: $nav-width;

@@ -26,7 +26,7 @@ const Home = ({ highlightProjects = [] }) => {
   const [currStyle, setCurrStyle] = useState(null)
 
   const themeOffset = 2;
-  const themeChangeTime = 15;
+  const themeChangeTime = 5;
 
   useEffect(() => {
     // var now = new Date();
@@ -36,14 +36,14 @@ const Home = ({ highlightProjects = [] }) => {
     // Random theme
     
     // transitionAuroraStyle(Math.floor(Math.random() * 6));
-    transitionAuroraStyle(0);
+    transitionAuroraStyle(1);
   }, [])
 
   const transitionAuroraStyle = async (newStyleIndex) => {
     console.log(newStyleIndex)
     setCurrStyle(auroralStyleArr[newStyleIndex]);
 
-    setTimeout(() => transitionAuroraStyle((newStyleIndex + 1) % auroralStyleArr.length) , 500 * themeChangeTime)
+    setTimeout(() => transitionAuroraStyle((newStyleIndex + 1) % auroralStyleArr.length) , 1000 * themeChangeTime)
     // await setTimeout(transitionAuroraStyle((newStyleIndex + 1) % auroralStyleArr.length), 1000 * 10)
   };
   
