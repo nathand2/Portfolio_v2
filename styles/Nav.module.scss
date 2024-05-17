@@ -2,48 +2,89 @@
 @import 'size';
 @import 'color';
 
-$nav-icon-width: 20px; 
+$nav-icon-width: 20px;
 $nav-icon-height: 20px;
 $nav-logo-width: 40px; // Width set in component <Image> element
 
+$nav-link-height: 40px;
+
 .nav {
-  // @media only screen and (max-width: 1050px) {
-  //   display: none;
-  // }
   position: fixed !important;
   height: 100vh;
-  width: $nav-width;
-  // width: $nav-width-extended;
-  // background: #ff000000 !important;
-  // background: orange;
   color: #D7E2E1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   z-index: 20 !important;
   transition: width .5s, background-color 0.3s ease;
-  overflow-x:hidden;
-  background-color: transparent;
+  overflow-x: hidden;
+  margin-left: 30px;
 
-  .nav_titles {
-    // display: none;
-    opacity: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    grid-row: 1;
-    grid-column: 2;
-    transition: opacity .2s;
+  
+  .logo_container {
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
-  &:hover {
-    width: $nav-width-extended;
-    .nav_titles {
-      // display: block;
-      // visibility: visible;
-      opacity: 1;
+  div {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+    
+      li {
+        margin-bottom: 15px;
+        height: $nav-link-height;
+    
+        a {
+          display: grid;
+          grid-template-columns: $nav-logo-width auto; /* Start with one column */
+          height: $nav-link-height;
+          transition: width 0.3s linear, border 0.5s linear, background-color 0.5s linear;
+    
+          background-color: transparent;
+          border: transparent;
+          border-radius: 20px;
+          overflow: hidden;
+    
+          .icon {
+            height: $nav-icon-height;
+            width: $nav-icon-width;
+            margin: auto;
+          }
+    
+          h1 {
+            margin-left: 20px;
+            font-size: 16px;
+            vertical-align: middle;
+            height: $nav-link-height;
+            line-height: $nav-link-height;
+            transition: opacity 0.5s linear;
+    
+            &:hover {
+              opacity: 1;
+            }
+          }
+    
+          &:not(:hover) {
+            width: $nav-logo-width;
+            border: none;
+            background-color: transparent;
+          }
+    
+          &:hover {
+            width: calc(#{$nav-logo-width} + 100px); /* Increase width on hover */
+            border: rgba(46, 55, 90, 0.749) solid 1px;
+            background-color: $dark-main;
+          }
+        }
+      }
     }
-    background-color: #090C18;
+
   }
+
 }
+
 
 .nav_menu {
   height: $nav-height;
@@ -57,189 +98,131 @@ $nav-logo-width: 40px; // Width set in component <Image> element
   z-index: 20 !important;
 }
 
-.nav ul {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  margin-left: calc(($nav-width / 2) - ($nav-icon-width / 2));
-  list-style: none;
-  cursor: pointer;
-  li:hover {
-    color: $highlight-aquamarine;
-  }
-}
 
-.icon {
-  height: $nav-icon-height;
-  width: $nav-icon-width;
-}
+// .nav ul li {
+//   margin-top: 5px;
+//   margin-bottom: 5px;
 
-.nav ul li {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  a {
-    display: grid;
-    align-items: center;
-    overflow: hidden;
-    grid-template-columns: 1fr 5fr;
-    h1 {
-      margin-left: 20px;
-    }
-  }
-}
-.nav ul li a h1 {
-  font-weight: 400;
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+// }
 
-ul.social-links {
-  li {
-    width: $nav-icon-width;
-    height: $nav-icon-height;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
+// .nav ul li a h1 {
+//   font-weight: 400;
+//   font-size: 20px;
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+// }
+
+// ul.social-links {
+//   li {
+//     width: $nav-icon-width;
+//     height: $nav-icon-height;
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//   }
+// }
 
 .social-links {
-  margin-left: auto;  /* Push to right */
+  // margin-left: auto;
+  /* Push to right */
   font-weight: 300;
-  list-style: none;
-  position:absolute;
-  bottom:20px;
-}
-
-.info-icon {
-  width: $nav-icon-width;
-  height: $nav-icon-height;
-  cursor: pointer;
+  // position: absolute;
+  bottom: 20px;
   margin-top: auto;
-  margin-bottom: auto;
-  &:hover {
-    color: $highlight-aquamarine;
-    transition: .2s;
-  }
 }
 
-.logo_container {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  margin-left: calc(($nav-width / 2) - ($nav-logo-width / 2));
-}
+// .info-icon {
+//   width: $nav-icon-width;
+//   height: $nav-icon-height;
+//   cursor: pointer;
+//   margin-top: auto;
+//   margin-bottom: auto;
 
-.logo-main {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-}
+//   &:hover {
+//     color: $highlight-aquamarine;
+//     transition: .2s;
+//   }
+// }
 
-.logo-text-bold {
-    
-  margin-top: auto;
-  margin-bottom: auto;
-  align-items: center;
-  justify-self: flex-start;
-  font-weight: 500;
-  cursor: pointer;
-}
+// .nav_normal {
+//   display: flex;
+//   flex-direction: row;
+// }
 
-.logo-text-normal {
-    
-  margin-top: auto;
-  margin-bottom: auto;
-  align-items: center;
-  justify-self: flex-start;
-  font-weight: 100;
-  cursor: pointer;
-}
-
-.nav_normal {
-  display: flex;
-  flex-direction: row;
-}
-
-.collapsed_links_container {
-  width: 100%;
-  background-color: red;
-  display: none;
-}
-
-.collapsed_links_main {
-  display: flex;
-  flex-direction: column;
-}
+// .collapsed_links_main {
+//   display: flex;
+//   flex-direction: column;
+// }
 
 
-.btnmenu {
-  width: 30px;
-  height: 30px;
-  margin-left: auto;
-  &:hover {
-    border-width: 2px;
-    border-color: white;
-    border-radius: 5px;
-    border-style: solid;
-  }
-}
+// .btnmenu {
+//   width: 30px;
+//   height: 30px;
+//   margin-left: auto;
+
+//   &:hover {
+//     border-width: 2px;
+//     border-color: white;
+//     border-radius: 5px;
+//     border-style: solid;
+//   }
+// }
 
 
-.menu_show {
-  position: relative;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  // background-color: $dark-main !important;
-  color: white;
-  z-index: 20 !important;
-  overflow: hidden;
-}
+// .menu_show {
+//   position: relative;
+//   height: auto;
+//   display: flex;
+//   flex-direction: column;
+//   // background-color: $dark-main !important;
+//   color: white;
+//   z-index: 20 !important;
+//   overflow: hidden;
+// }
 
-.menu_hide {
-  position: relative;
-  height: 0;
-  display: flex;
-  flex-direction: column;
-  // background-color: $dark-main !important;
-  color: white;
-  z-index: 20 !important;
-  overflow: hidden;
-}
+// .menu_hide {
+//   position: relative;
+//   height: 0;
+//   display: flex;
+//   flex-direction: column;
+//   // background-color: $dark-main !important;
+//   color: white;
+//   z-index: 20 !important;
+//   overflow: hidden;
+// }
 
-.menu_links_list {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  cursor: pointer;
-  li:hover {
-    color: lightblue;
-  }
+// .menu_links_list {
+//   display: flex;
+//   height: 100%;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   list-style: none;
+//   cursor: pointer;
 
-  
-  li {
-    margin: 5px 25px;
-  }
-  
-  li a {
-    font-weight: 400;
-    font-size: 24px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+//   li:hover {
+//     color: lightblue;
+//   }
 
-  .menu_social_links {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style-position: outside;
-  }
-}
+
+//   li {
+//     margin: 5px 25px;
+//   }
+
+//   li a {
+//     font-weight: 400;
+//     font-size: 24px;
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//   }
+
+//   .menu_social_links {
+//     display: flex;
+//     flex-direction: row;
+//     list-style: none;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0;
+//     padding: 0;
+//     list-style-position: outside;
+//   }
+// }

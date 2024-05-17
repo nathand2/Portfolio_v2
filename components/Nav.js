@@ -20,95 +20,107 @@ const Nav = () => {
   return (
     <>
       <nav className={navStyles.nav}>
-        <div className={navStyles.logo_container}>
-          <Link href="/" className={navStyles["logo-main"]}>
-            <Image src="/logo.png" alt={"logo"} width="40" height="20" priority />
-          </Link>
+        <div>
+
+          <div className={navStyles.logo_container}>
+            <Link href="/" className={navStyles["logo-main"]}>
+              <Image src="/logo.png" alt={"logo"} width="40" height="20" priority />
+            </Link>
+          </div>
+
+          <ul className={navStyles["links-list"]}>
+            <li>
+              <Link href="/" className={navStyles.header_link}>
+                <FaHome className={navStyles.icon} />
+                <h1 className={navStyles.nav_titles}>Home</h1>
+              </Link>
+            </li>
+            <li>
+              {
+                <Link href="/projects" className={navStyles.header_link}>
+                  <GoFileDirectory className={navStyles.icon} />
+                  <h1 className={navStyles.nav_titles}>Projects</h1>
+                </Link>
+              }
+            </li>
+            {/* <li>
+              {
+                <Link href="/about" className={navStyles.header_link}>
+                  <FaUserAlt className={navStyles.icon} />
+                  <h1 className={navStyles.nav_titles}>About Me</h1>
+                </Link>
+              }
+            </li> */}
+            {/* <li>
+              {
+                <Link href="/education" className={navStyles.header_link}>
+                  <MdSchool className={navStyles.icon} />
+                  <h1 className={navStyles.nav_titles}>Education</h1>
+                </Link>
+              }
+            </li> */}
+            {/* <li>
+              <Link
+                href="/Nathan_Dong_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                classNam{navStyles.header_link}
+              >
+                <AiFillFile className={navStyles.icon} />
+                <h1 className={navStyles.nav_titles}>Resume</h1>
+              </Link>
+            </li> */}
+            <li>
+              {
+                <Link href="/eyes" className={navStyles.header_link}>
+                  <HiEye className={navStyles.icon} />
+                  <h1 className={navStyles.nav_titles}>20-20-20</h1>
+                </Link>
+              }
+            </li>
+          </ul>
         </div>
-
-        <ul className={navStyles["links-list"]}>
-          <li>
-            <Link href="/" className={navStyles.header_link}>
-              <FaHome className={navStyles.icon} />
-              <h1 className={navStyles.nav_titles}>Home</h1>
-            </Link>
-          </li>
-          <li>
-            {
-              <Link href="/projects" className={navStyles.header_link}>
-                <GoFileDirectory className={navStyles.icon} />
-                <h1 className={navStyles.nav_titles}>Projects</h1>
-              </Link>
-            }
-          </li>
-          {/* <li>
-            {
-              <Link href="/about" className={navStyles.header_link}>
-                <FaUserAlt className={navStyles.icon} />
-                <h1 className={navStyles.nav_titles}>About Me</h1>
-              </Link>
-            }
-          </li> */}
-          {/* <li>
-            {
-              <Link href="/education" className={navStyles.header_link}>
-                <MdSchool className={navStyles.icon} />
-                <h1 className={navStyles.nav_titles}>Education</h1>
-              </Link>
-            }
-          </li> */}
-          {/* <li>
-            <Link
-              href="/Nathan_Dong_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              classNam{navStyles.header_link}
-            >
-              <AiFillFile className={navStyles.icon} />
-              <h1 className={navStyles.nav_titles}>Resume</h1>
-            </Link>
-          </li> */}
-          <li>
-            {
-              <Link href="/eyes" className={navStyles.header_link}>
-                <HiEye className={navStyles.icon} />
-                <h1 className={navStyles.nav_titles}>20-20-20</h1>
-              </Link>
-            }
-          </li>
-        </ul>
         <span></span>
+        <div>
+          
+        </div>
+        <div>
 
-        <ul className={navStyles["social-links"]}>
-          <li>
-            <a
-              href="https://github.com/NathanD2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="main-graphic-link"
-            >
-              <FaGithub className={navStyles["info-icon"]} />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/nathandong-dev/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="main-graphic-link"
-            >
-              <FaLinkedin className={navStyles["info-icon"]} />
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:nate.dong97@gmail.com"
-              className="main-graphic-link"
-            >
-              <HiOutlineMail className={navStyles["info-icon"]} />
-            </a>
-          </li>
-        </ul>
+          <ul className={navStyles["social-links"]}>
+            <li>
+              <a
+                href="https://github.com/NathanD2"
+                target="_blank"
+                rel="noopener noreferrer"
+                // className="main-graphic-link"
+                className={navStyles.header_link}
+              >
+                <FaGithub className={navStyles["icon"]} />
+                <h1 className={navStyles.nav_titles}>Github</h1>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/nathandong-dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="main-graphic-link"
+              >
+                <FaLinkedin className={navStyles["icon"]} />
+                <h1 className={navStyles.nav_titles}>LinkedIn</h1>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:nate.dong97@gmail.com"
+                className="main-graphic-link"
+              >
+                <HiOutlineMail className={navStyles["icon"]} />
+                <h1 className={navStyles.nav_titles}>Email</h1>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   );
