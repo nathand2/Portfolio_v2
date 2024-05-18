@@ -24,7 +24,9 @@
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
   padding: 20px;
-  background-color: rgba(29, 36, 49, 0.95);
+  background-color: rgba(29, 36, 49, 0.8);
+  
+  backdrop-filter: blur(20px);
 
   border-color: rgba(240, 240, 240, 0.2);
   border-width: 2px;

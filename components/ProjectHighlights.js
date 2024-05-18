@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 const ProjectHighlights = ({ highlightProjects }) => {
   return (
     <div className={styles.container} id="projects">
-      <h1 classname={styles.title}>Project Highlights</h1>
+      <h1 className={styles.title}>Project Highlights</h1>
       <br />
       <div className={styles.project_container}>
         {highlightProjects !== undefined &&
@@ -23,9 +23,8 @@ const ProjectHighlights = ({ highlightProjects }) => {
               },
               index
             ) => (
-              <>
+              <React.Fragment key={index}>
                 <ProjectCard
-                  key={index}
                   projectImageName={projectImageName}
                   title={projectTitle}
                   tags={tags}
@@ -45,7 +44,7 @@ const ProjectHighlights = ({ highlightProjects }) => {
                     />
                   </svg>
                 ) : undefined}
-              </>
+              </React.Fragment>
             )
           )}
       </div>

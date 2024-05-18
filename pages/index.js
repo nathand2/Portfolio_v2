@@ -2,8 +2,10 @@ import Head from 'next/head'
 import Landing from '../components/Landing'
 import ProjectHighlights from '../components/ProjectHighlights'
 import AboutMeEducation from '../components/AboutMeEducation'
+import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
 import Testimonials from '../components/Testimonials'
+import ContactMe from '../components/ContactMe'
 
 import styles from "../styles/Index.module.css";
 import auroralStyles from "../styles/auroral.module.css";
@@ -15,8 +17,8 @@ import { useEffect, useState } from 'react'
 const Home = ({ highlightProjects = [] }) => {
 
   const auroralStyleArr = [
-    'auroral-northern',
     'auroral-northern-intense',
+    'auroral-northern',
     'auroral-northern-dimmed',
     'auroral-northern-dusk',
     'auroral-northern-warm',
@@ -71,9 +73,11 @@ const Home = ({ highlightProjects = [] }) => {
       </section>
       <section className={styles.section}>
         <Skills />
-        <AboutMeEducation />
+        {/* <AboutMeEducation /> */}
+        <AboutMe />
         <Testimonials />
       </section>
+      <ContactMe/>
     </div>
   )
 }
