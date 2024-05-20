@@ -17,7 +17,7 @@ const Timer = () => {
   const [btnText, setBtnText] = useState('Start')
   const [isStarted, setIsStarted] = useState(false)
   const [currInterval, setCurrInterval] = useState({})
-  
+
 
   const longTimeout = async (timeout) => {
     let count = timeout - 1;
@@ -73,6 +73,7 @@ const Timer = () => {
 
   return (
     <div className={styles.container}>
+    
       <div className={styles.timer_container}>
       <div className={styles.test_container} onClick={testNotification} >
         <button>

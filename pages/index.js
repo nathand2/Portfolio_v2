@@ -6,6 +6,7 @@ import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
 import Testimonials from '../components/Testimonials'
 import ContactMe from '../components/ContactMe'
+import Auroral from '../components/Auroral'
 
 import styles from "../styles/Index.module.css";
 import auroralStyles from "../styles/auroral.module.css";
@@ -15,56 +16,19 @@ const fs = require('fs').promises; // Import fs promises API
 import { useEffect, useState } from 'react'
 
 const Home = ({ highlightProjects = [] }) => {
-
-  const auroralStyleArr = [
-    'auroral-northern-intense',
-    'auroral-northern',
-    'auroral-northern-dimmed',
-    'auroral-northern-dusk',
-    'auroral-northern-warm',
-    'auroral-agrabah'
-  ];
-
-  const [currStyle, setCurrStyle] = useState(null)
-
-  const themeOffset = 2;
-  const themeChangeTime = 5;
-
-  useEffect(() => {
-    // var now = new Date();
-    // let currStyleIndex = Math.floor(now.getHours() / 6) + themeOffset;
-    // transitionAuroraStyle(currStyleIndex);
-
-    // Random theme
-    
-    // transitionAuroraStyle(Math.floor(Math.random() * 6));
-    transitionAuroraStyle(1);
-  }, [])
-
-  const transitionAuroraStyle = async (newStyleIndex) => {
-    console.log(newStyleIndex)
-    setCurrStyle(auroralStyleArr[newStyleIndex]);
-
-    setTimeout(() => transitionAuroraStyle((newStyleIndex + 1) % auroralStyleArr.length) , 1000 * themeChangeTime)
-    // await setTimeout(transitionAuroraStyle((newStyleIndex + 1) % auroralStyleArr.length), 1000 * 10)
-  };
   
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const handleMouseMove = (e) => {
+    setMousePosition({ x: e.clientX, y: e.clientY });
+    console.log(e.clientX, e.clientY);
+  };
+
   return (
-    <div className={styles.container}>
-      <div className={`${auroralStyles['container']}`}>
-        <div className={`${auroralStyles['auroral-northern']}`} style={{opacity: currStyle == "auroral-northern" ? 1 : 0}}></div>
-        <div className={`${auroralStyles['auroral-northern-intense']}`} style={{opacity: currStyle == "auroral-northern-intense" ? 1 : 0}}></div>
-        <div className={`${auroralStyles['auroral-northern-dimmed']}`}style={{opacity: currStyle == "auroral-northern-dimmed" ? 1 : 0}}></div>
-        <div className={`${auroralStyles['auroral-northern-dusk']}`}style={{opacity: currStyle == "auroral-northern-dusk" ? 1 : 0}}></div>
-        <div className={`${auroralStyles['auroral-northern-warm']}`}style={{opacity: currStyle == "auroral-northern-warm" ? 1 : 0}}></div>
-        <div className={`${auroralStyles['auroral-agrabah']}`}style={{opacity: currStyle == "auroral-agrabah" ? 1 : 0}}></div>
-      </div>
-      <div className={`${auroralStyles['star-container']}`}>
-        <div className={`${auroralStyles['auroral-stars']}`}></div>
-      </div>
+    <div className={styles.container} onMouseMove={handleMouseMove}>
       <Head>
         <title>by Nathan</title>
       </Head>
+      <Auroral mouseX={mousePosition.x} mouseY={mousePosition.y} />
       <section className={styles.section}>
         <Landing />
       </section>
