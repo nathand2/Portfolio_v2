@@ -26,6 +26,7 @@ const Auroral = ({mouseX, mouseY}) => {
     // Random theme
     
     // transitionAuroraStyle(Math.floor(Math.random() * 6));
+    console.log(mouseX, mouseY);
     transitionAuroraStyle(1);
   }, [])
 
@@ -42,7 +43,7 @@ const Auroral = ({mouseX, mouseY}) => {
   return (
     <div>
        <div className={`${auroralStyles['container']}`} style={{
-        // transform: `translateX(calc(60vw - calc(60vw - ${mouseX}px))) translateY(calc(60vh - calc(60vh - ${mouseY}px)))`
+        // transform: `translateX(calc(0vw - calc(60vw - ${mouseX}px))) translateY(calc(0vh - calc(60vh - ${mouseY}px)))`
        }}>
         <div className={`${auroralStyles['auroral-northern']}`} style={{opacity: currStyle == "auroral-northern" ? 1 : 0}}></div>
         <div className={`${auroralStyles['auroral-northern-intense']}`} style={{opacity: currStyle == "auroral-northern-intense" ? 1 : 0}}></div>

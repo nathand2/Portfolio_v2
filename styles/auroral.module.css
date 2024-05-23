@@ -9,11 +9,12 @@ body {
 
 .container {
   width: 200vw !important;
-  height: 100vh;
-  overflow: hidden;
+  height: 200vh !important;
+  /* overflow: hidden; */
   position: fixed;
   display: block;
   z-index: 1 !important;
+  transform: translateX(calc(-50vw)) translateY(calc(-50vh));
 }
 
 @-webkit-keyframes aura {
@@ -126,14 +127,14 @@ body {
 
 .auroral-agrabah {
   position: absolute;
-  left: -25%;
-  top: -50%;
-  width: 200%;
-  height: 200%;
+  left: -12.5vw;
+  top: -25vh;
+  width: 200vw;
+  height: 200vh;
   -webkit-animation-name: aura;
           animation-name: aura;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -148,10 +149,10 @@ body {
 
 .auroral-northern {
   position: absolute;
-  left: -25%;
-  top: -50%;
-  width: 200%;
-  height: 200%;
+  left: -12.5vw;
+  top: -25vh;
+  width: 200vw;
+  height: 200vh;
   -webkit-animation-name: northern;
           animation-name: northern;
   -webkit-animation-duration: 60s;
@@ -171,10 +172,10 @@ body {
 
 .auroral-northern-intense {
   position: absolute;
-  left: -25%;
-  top: -50%;
-  width: 200%;
-  height: 200%;
+  left: -12.5vw;
+  top: -25vh;
+  width: 200vw;
+  height: 200vh;
   -webkit-animation-name: aura;
           animation-name: aura;
   -webkit-animation-duration: 60s;
@@ -194,10 +195,10 @@ body {
 
 .auroral-northern-dimmed {
   position: absolute;
-  left: -25%;
-  top: -50%;
-  width: 200%;
-  height: 200%;
+  left: -12.5vw;
+  top: -25vh;
+  width: 200vw;
+  height: 200vh;
   -webkit-animation-name: northern;
           animation-name: northern;
   -webkit-animation-duration: 60s;
@@ -217,10 +218,10 @@ body {
 
 .auroral-northern-dusk {
   position: absolute;
-  left: -25%;
-  top: -50%;
-  width: 200%;
-  height: 200%;
+  left: -12.5vw;
+  top: -25vh;
+  width: 200vw;
+  height: 200vh;
   -webkit-animation-name: northern;
           animation-name: northern;
   -webkit-animation-duration: 60s;
@@ -240,10 +241,10 @@ body {
 
 .auroral-northern-warm {
   position: absolute;
-  left: -25%;
-  top: -50%;
-  width: 200%;
-  height: 200%;
+  left: -12.5vw;
+  top: -25vh;
+  width: 200vw;
+  height: 200vh;
   -webkit-animation-name: aura;
           animation-name: aura;
   -webkit-animation-duration: 60s;
