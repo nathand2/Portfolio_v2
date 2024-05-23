@@ -1,7 +1,5 @@
 import styles from "../styles/AboutMe.module.css";
 
-import Skills from "./Skills";
-
 const AboutMe = () => {
   return (
     <div className={styles.container}>

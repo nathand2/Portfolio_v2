@@ -142,7 +142,7 @@ body {
           animation-direction: alternate;
   background: -webkit-linear-gradient(110deg, rgba(26, 0, 192, 0.4) 40%, rgba(215, 0, 67, 0.4)), -webkit-linear-gradient(30deg, #1a00c0 10%, #d70043);
   background: linear-gradient(-20deg, rgba(26, 0, 192, 0.4) 40%, rgba(215, 0, 67, 0.4)), linear-gradient(60deg, #1a00c0 10%, #d70043);
-  transition: opacity linear 5s;
+  transition: opacity linear 2s;
   opacity: 0;
 }
 
@@ -154,8 +154,8 @@ body {
   height: 200%;
   -webkit-animation-name: northern;
           animation-name: northern;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -164,7 +164,7 @@ body {
           animation-direction: alternate;
   background: -webkit-linear-gradient(80deg, #a1d9b4 20%, #32988a 40%, #000e3c 70%);
   background: linear-gradient(10deg, #a1d9b4 20%, #32988a 40%, #000e3c 70%);
-  transition: opacity linear 5s;
+  transition: opacity linear 2s;
   opacity: 0;
   z-index: 1 !important;
 }
@@ -177,8 +177,8 @@ body {
   height: 200%;
   -webkit-animation-name: aura;
           animation-name: aura;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -187,7 +187,7 @@ body {
           animation-direction: alternate;
   background: -webkit-linear-gradient(80deg, #b7a841 20%, #a1006a 40%, #371d40 60%);
   background: linear-gradient(10deg, #b7a841 20%, #a1006a 40%, #371d40 60%);
-  transition: opacity linear 5s;
+  transition: opacity linear 2s;
   opacity: 0;
   z-index: 1 !important;
 }
@@ -200,8 +200,8 @@ body {
   height: 200%;
   -webkit-animation-name: northern;
           animation-name: northern;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -210,7 +210,7 @@ body {
           animation-direction: alternate;
   background: -webkit-linear-gradient(135deg, rgba(237, 124, 148, 0.3) 20%, rgba(35, 82, 154, 0.3) 70%), -webkit-linear-gradient(80deg, #916b63 7%, #b8ba6f 20%, #ed7c94 40%, #23529a 60%);
   background: linear-gradient(-45deg, rgba(237, 124, 148, 0.3) 20%, rgba(35, 82, 154, 0.3) 70%), linear-gradient(10deg, #916b63 7%, #b8ba6f 20%, #ed7c94 40%, #23529a 60%);
-  transition: opacity linear 5s;
+  transition: opacity linear 2s;
   opacity: 0;
   z-index: 1 !important;
 }
@@ -223,8 +223,8 @@ body {
   height: 200%;
   -webkit-animation-name: northern;
           animation-name: northern;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -233,7 +233,7 @@ body {
           animation-direction: alternate;
   background: -webkit-linear-gradient(125deg, rgba(145, 107, 99, 0.5) 15%, rgba(184, 186, 111, 0.5) 25%, transparent 60%), -webkit-linear-gradient(80deg, #916b63 9%, #b8ba6f 30%, #ed7c94 45%, #23529a 65%);
   background: linear-gradient(-35deg, rgba(145, 107, 99, 0.5) 15%, rgba(184, 186, 111, 0.5) 25%, transparent 60%), linear-gradient(10deg, #916b63 9%, #b8ba6f 30%, #ed7c94 45%, #23529a 65%);
-  transition: opacity linear 5s;
+  transition: opacity linear 2s;
   opacity: 0;
   z-index: 1 !important;
 }
@@ -246,8 +246,8 @@ body {
   height: 200%;
   -webkit-animation-name: aura;
           animation-name: aura;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -256,7 +256,7 @@ body {
           animation-direction: alternate;
   background: -webkit-linear-gradient(85deg, transparent 70%, #da7712 95%), -webkit-linear-gradient(290deg, #432c24 30%, #d96d7d 62%, #da7712 95%);
   background: linear-gradient(5deg, transparent 70%, #da7712 95%), linear-gradient(160deg, #432c24 30%, #d96d7d 62%, #da7712 95%);
-  transition: opacity linear 5s;
+  transition: opacity linear 2s;
   opacity: 0;
   z-index: 1 !important;
 }

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 import auroralStyles from "../styles/auroral.module.css";
-import CircularMask from "./CircularMask";
 
 const Auroral = ({mouseX, mouseY}) => {
 
@@ -15,7 +14,7 @@ const Auroral = ({mouseX, mouseY}) => {
   ];
 
   const themeOffset = 2;
-  const themeChangeTime = 5;
+  const themeChangeTime = 10;
 
   const [currStyle, setCurrStyle] = useState(null)
   
@@ -42,7 +41,9 @@ const Auroral = ({mouseX, mouseY}) => {
 
   return (
     <div>
-       <div className={`${auroralStyles['container']}`}>
+       <div className={`${auroralStyles['container']}`} style={{
+        // transform: `translateX(calc(60vw - calc(60vw - ${mouseX}px))) translateY(calc(60vh - calc(60vh - ${mouseY}px)))`
+       }}>
         <div className={`${auroralStyles['auroral-northern']}`} style={{opacity: currStyle == "auroral-northern" ? 1 : 0}}></div>
         <div className={`${auroralStyles['auroral-northern-intense']}`} style={{opacity: currStyle == "auroral-northern-intense" ? 1 : 0}}></div>
         <div className={`${auroralStyles['auroral-northern-dimmed']}`}style={{opacity: currStyle == "auroral-northern-dimmed" ? 1 : 0}}></div>
@@ -60,7 +61,7 @@ const Auroral = ({mouseX, mouseY}) => {
           width: "200vw !important",
           height: "200vh",
           pointerEvents: undefined,
-          background: `radial-gradient(circle at ${mouseX}px ${mouseY}px, transparent, rgba(0, 0, 0, 1) 100px)`,
+          background: `radial-gradient(circle at ${mouseX}px ${mouseY}px, transparent 0px, rgba(0, 0, 0, 1) 150px)`,
           mixBlendMode: "multiply",
           overflow: "hidden",
         }}
