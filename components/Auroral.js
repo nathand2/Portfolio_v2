@@ -26,7 +26,6 @@ const Auroral = ({mouseX, mouseY}) => {
     // Random theme
     
     // transitionAuroraStyle(Math.floor(Math.random() * 6));
-    console.log(mouseX, mouseY);
     transitionAuroraStyle(1);
   }, [])
 
