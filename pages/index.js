@@ -28,19 +28,19 @@ const Home = ({ highlightProjects = [] }) => {
       <Head>
         <title>by Nathan</title>
       </Head>
-      <Auroral mouseX={mousePosition.x} mouseY={mousePosition.y} />
+      {/* <Auroral mouseX={mousePosition.x} mouseY={mousePosition.y} /> */}
       <section className={styles.section}>
         <Landing />
+      </section>
+      <section className={styles.section} id="about">
+        <AboutMe />
+        <Skills />
+        {/* <AboutMeEducation /> */}
       </section>
       <section className={styles.section}>
         <ProjectHighlights highlightProjects={highlightProjects} />
       </section>
-      <section className={styles.section}>
-        <Skills />
-        {/* <AboutMeEducation /> */}
-        <AboutMe />
-        <Testimonials />
-      </section>
+      <Testimonials />
       <ContactMe/>
     </div>
   )

@@ -5,22 +5,32 @@ const Skills = () => {
     <>
       
       <div className={styles.container}>
-          <div className={styles.twocolumns}>
+        <div className={styles.col}>
+          <div className={styles.skill_container}>
             <h2>Languages</h2>
-            Python 🐍, C#, C++, Swift, Java, C, Javascript, Typescript
+            <p>Python 🐍, C#, C++, Swift, Java, C, Javascript, Typescript</p>
           </div>
-          <div className={styles.col_2}>
+          <div className={styles.skill_container}>
             <h2>Web/Mobile</h2>
-            React.js, Next.js, Express.js, Node.js, Angular.ts,
+            <p>React.js, Next.js, Express.js, Node.js, Angular.ts</p>
           </div>
-          <div className={styles.col_1}>
+          <div className={styles.skill_container}>
             <h2>Database</h2>
-              MySQL, PostgreSQL
+              <p>MySQL, PostgreSQL</p>
           </div>
-          <div className={styles.twocolumns}>
+          <div className={styles.skill_container}>
             <h2>Methodologies</h2>
-            Agile, Object Oriented Programming, REST Api&apos;s
+            <p>Agile, Object Oriented Programming, REST Api&apos;s</p>
           </div>
+        </div>
+        <div className={styles.col}>
+          <h1 className={styles.background_text}>NATHAN</h1>
+          <h1 className={styles.background_text}>NATHAN</h1>
+          <h1 className={styles.background_text}>NATHAN</h1>
+          <h1 className={styles.background_text}>NATHAN</h1>
+          <h1 className={styles.background_text}>NATHAN</h1>
+          <h1 className={styles.background_text}>NATHAN</h1>
+        </div>
       </div>
     </>
   )

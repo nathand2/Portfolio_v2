@@ -1,31 +1,93 @@
 @import 'size';
+@import 'color';
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Orbitron:wght@400..900&display=swap');
 
 $--line-height: 300px;
 
 .container {
-  width: 100dvw;
+  width: 100vw;
+  // width: 500px !important; 
   color: white;
   display: grid;
   position: relative;
   grid-template-columns: repeat(2, 1fr);
-  @media screen and (max-width: $screen-small) {
-    grid-template-columns: repeat(1, 1fr);
+  // @media screen and (max-width: $screen-small) {
+  //   grid-template-columns: repeat(1, 1fr);
+  // }
+  height: 60vh;
+  background-color: $paper-white-complement;
+
+  // gap: 20px;
+  .col {
+    width: 100% !important;
+  }
+  .col:nth-child(1) {
+    // background-color: aqua;
+    align-items: flex-end;
+  }
+  .col:nth-child(2) {
+    // background-color: orange;
+    align-items: flex-start;
   }
 
-  gap: 20px;
-  // padding-left: $nav-width;
-  // padding-right: $nav-width;
-
   div {
-    border-color: #f0f0f0;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: calc(50vw);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    div {
+      border-color: #f0f0f0;
+      border-width: 2px;
+      border-style: solid;
+      border-radius: calc(50vw);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     
+  
+      font-family: "Orbitron", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      transition: background-color 0.1s linear, color 0.1s linear, transform 0.1s linear, scale 0.1s linear;
 
-    backdrop-filter: blur(20px);
+      &:hover {
+        background-color: $paper-white;
+        color: $paper-white-complement;
+        scale: 1.1;
+        // width: 550px !important;
+        transform: translateX(20px);
+      }
+  
+      h2 {
+        font-size: 22px;
+        font-weight: 800;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 800;
+      }
+  
+      backdrop-filter: blur(20px);
+    }
+
+    // Right side
+    .background_text {
+      font-family: "Black Ops One", system-ui;
+      font-weight: 400;
+      font-size: 128px;
+      line-height: 85px;
+      letter-spacing: -5px;
+      color: rgba(255, 255, 255, 0.03);
+      transition: color 0.1s linear;
+      cursor: pointer;
+      user-select: none;
+      &:hover {
+        color: rgba(255, 255, 255, 0.1);
+      }
+    }
   }
 }
 
@@ -35,12 +97,6 @@ $--line-height: 300px;
   div {
     margin-left: 50px !important;
     margin-right: 50px !important;
-  }
-  .col_1 {
-    text-align: end;
-  }
-  .col_2 {
-    text-align: start;
   }
   ul {
     list-style-type: none !important;
