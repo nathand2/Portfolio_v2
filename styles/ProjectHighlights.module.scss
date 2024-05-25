@@ -1,8 +1,9 @@
 @import 'color';
 @import 'size';
 
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+
 .container {
-  color: white;
   min-height: 100vh;
   width: 100%;
 
@@ -11,6 +12,8 @@
 
   position: relative;
   padding-bottom: 100px;
+  
+  background-color: $paper-white-complement;
 
   .title {
     text-align: start !important;
@@ -24,17 +27,21 @@
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
   padding: 20px;
-  background-color: rgba(29, 36, 49, 0.8);
   
-  backdrop-filter: blur(20px);
+  color: $paper-white-complement;
+  background-color: $paper-white;
+  // background-color: rgba(29, 36, 49, 0.8);
+  
+  // backdrop-filter: blur(20px);
 
   border-color: rgba(240, 240, 240, 0.2);
   border-width: 2px;
   border-style: solid;
-  border-radius: calc(50vw);
+  // border-radius: calc(50vw);
+  // border-radius: 8px;
   padding: 20px;
-  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(31, 68, 63, 0.1);
+
 
   position: relative;
 }

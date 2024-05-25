@@ -1,7 +1,6 @@
 .container {
   background-color: #0f1923;
   color: #ece8e1;
-  min-height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;

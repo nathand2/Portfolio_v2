@@ -23,7 +23,16 @@ const ProjectCard = ({
     // className={styles.project_desc_container}>
     <div className={styles.project_card_container}>
       <div>
-        <h1 className={styles.project_name}>{title}</h1>
+        <h1 className={styles.project_name}>{"//" + title.toUpperCase()}</h1>
+        <svg width="100%" height="10" style={{ transform: `translateY(-10px)`}}>
+          <line
+            x1="0"
+            y1="0"
+            x2="100%"
+            y2="0"
+            style={{ stroke: "black", strokeWidth: 8}}
+          />
+        </svg>
         <div>
           {sections ? (
             sections.map(({ heading, content }, index) => (

@@ -6,7 +6,7 @@
   display: grid;
   position: relative;
   grid-template-columns: repeat(2, 1fr);
-  height: 60vh;
+  min-height: 60vh;
   background-color: #0F1923;
 }
 .container .col {
@@ -37,6 +37,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   transition: background-color 0.1s linear, color 0.1s linear, transform 0.1s linear, scale 0.1s linear;
+  line-height: 90%;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
 }
@@ -47,7 +48,7 @@
   transform: translateX(20px);
 }
 .container div div h2 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 800;
 }
 .container div div p {

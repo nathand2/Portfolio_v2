@@ -16,7 +16,7 @@ $--line-height: 300px;
   // @media screen and (max-width: $screen-small) {
   //   grid-template-columns: repeat(1, 1fr);
   // }
-  height: 60vh;
+  min-height: 60vh;
   background-color: $paper-white-complement;
 
   // gap: 20px;
@@ -52,6 +52,7 @@ $--line-height: 300px;
       font-optical-sizing: auto;
       font-weight: 400;
       transition: background-color 0.1s linear, color 0.1s linear, transform 0.1s linear, scale 0.1s linear;
+      line-height: 90%;
 
       &:hover {
         background-color: $paper-white;
@@ -62,7 +63,7 @@ $--line-height: 300px;
       }
   
       h2 {
-        font-size: 22px;
+        font-size: 24px;
         font-weight: 800;
       }
       p {

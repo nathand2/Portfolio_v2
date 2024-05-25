@@ -28,7 +28,7 @@ const Home = ({ highlightProjects = [] }) => {
       <Head>
         <title>by Nathan</title>
       </Head>
-      {/* <Auroral mouseX={mousePosition.x} mouseY={mousePosition.y} /> */}
+      <Auroral mouseX={mousePosition.x} mouseY={mousePosition.y} />
       <section className={styles.section}>
         <Landing />
       </section>

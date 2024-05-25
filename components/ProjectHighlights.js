@@ -40,7 +40,7 @@ const ProjectHighlights = ({ highlightProjects }) => {
                       y1="5"
                       x2="100%"
                       y2="5"
-                      style={{stroke: "white", strokeWidth:2}}
+                      style={{stroke: "black", strokeWidth:4}}
                     />
                   </svg>
                 ) : undefined}

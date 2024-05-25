@@ -7,8 +7,7 @@ const AboutMe = () => {
         <h2>
           {" "}
           Based in Vancouver BC, I&apos;m passionate about software development, the intersection of creativity, technology and forward-thinking
-        </h2>
-        <h2>I have a keen interest in video game developemnt in addition to extensive experience with Full-Stack development</h2>
+          I have a keen interest in video game development in addition to extensive experience with Full-Stack development</h2>
         <div className={styles.circles}>
           <svg width="160" height="50">
             <circle cx="30" cy="25" r="20" fill="#7B7B7B" />
