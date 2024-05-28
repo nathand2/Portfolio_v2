@@ -5,7 +5,8 @@ $layout-min-height: calc(100vh - #{$nav-height});
 
 .container {
   /* padding: 0 2rem; */
-  background-color: $dark-main;
+  // background-color: $dark-main;
+  background-color: $paper-white-complement;
   z-index: 5;
   // padding-left: $nav-width;
   // padding-right: $nav-width;

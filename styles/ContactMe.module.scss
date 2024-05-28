@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap');
+@import 'color';
 
 .container {
   height: 180px;
   position: relative;
+  background-color: $paper-white-complement;
 }
 .arrow {
   width: 100px;

@@ -9,7 +9,6 @@ import ContactMe from '../components/ContactMe'
 import Auroral from '../components/Auroral'
 
 import styles from "../styles/Index.module.css";
-import auroralStyles from "../styles/auroral.module.css";
 
 const fs = require('fs').promises; // Import fs promises API
 
@@ -20,7 +19,6 @@ const Home = ({ highlightProjects = [] }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const handleMouseMove = (e) => {
     setMousePosition({ x: e.clientX, y: e.clientY });
-    console.log(e.clientX, e.clientY);
   };
 
   return (
@@ -32,7 +30,7 @@ const Home = ({ highlightProjects = [] }) => {
       <section className={styles.section}>
         <Landing />
       </section>
-      <section className={styles.section} id="about">
+      <section className={styles.about_container} id="about">
         <AboutMe />
         <Skills />
         {/* <AboutMeEducation /> */}
@@ -40,7 +38,7 @@ const Home = ({ highlightProjects = [] }) => {
       <section className={styles.section}>
         <ProjectHighlights highlightProjects={highlightProjects} />
       </section>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <ContactMe/>
     </div>
   )

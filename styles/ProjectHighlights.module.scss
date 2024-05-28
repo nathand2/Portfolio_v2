@@ -19,6 +19,7 @@
     text-align: start !important;
     padding-top: 20px;
     align-items: start;
+    font-family: "Orbitron", sans-serif;
   }
 }
 
@@ -30,18 +31,12 @@
   
   color: $paper-white-complement;
   background-color: $paper-white;
-  // background-color: rgba(29, 36, 49, 0.8);
-  
-  // backdrop-filter: blur(20px);
 
   border-color: rgba(240, 240, 240, 0.2);
   border-width: 2px;
   border-style: solid;
-  // border-radius: calc(50vw);
-  // border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(31, 68, 63, 0.1);
-
 
   position: relative;
 }

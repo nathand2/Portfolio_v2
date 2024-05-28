@@ -1,10 +1,5 @@
-.container {
-  // height: 100dvh;
-  // overflow-y: scroll;
-  // scroll-snap-type: y proximity;
-  width: 100%,
-}
+@import 'size';
 
-.section {
-  // scroll-snap-align: start;
+.about_container {
+  overflow: hidden;
 }

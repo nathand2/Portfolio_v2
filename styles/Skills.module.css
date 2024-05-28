@@ -8,6 +8,8 @@
   grid-template-columns: repeat(2, 1fr);
   min-height: 60vh;
   background-color: #0F1923;
+  overflow: hidden;
+  min-width: 1000px;
 }
 .container .col {
   width: 100% !important;

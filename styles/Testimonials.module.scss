@@ -1,3 +1,5 @@
+@import 'color';
+
 // Chappie Image Sizing
 $--img-chap-width: clamp(6rem, 15vw, 15rem);
 $--img-chap-height: clamp(6rem, 15vw, 15rem);
@@ -6,12 +8,14 @@ $--img-chap-height: clamp(6rem, 15vw, 15rem);
   min-height: 50vh;
   width: 100%;
   box-sizing: content-box;
-  z-index: 10 !important;
+  // z-index: 10 !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white
+  color: white;
+  position: relative;
+  background-color: $paper-white-complement;
 }
 
 

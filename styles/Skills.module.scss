@@ -18,6 +18,9 @@ $--line-height: 300px;
   // }
   min-height: 60vh;
   background-color: $paper-white-complement;
+  
+  overflow: hidden;
+  min-width: 1000px;
 
   // gap: 20px;
   .col {

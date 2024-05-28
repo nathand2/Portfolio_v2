@@ -33,7 +33,7 @@ const ProjectHighlights = ({ highlightProjects }) => {
                   descLong={descLong}
                   sections={sections}
                 />
-                {index != highlightProjects.length - 1 ? (
+                {/* {index != highlightProjects.length - 1 ? (
                   <svg width="100%" height="10">
                     <line
                       x1="0"
@@ -43,7 +43,7 @@ const ProjectHighlights = ({ highlightProjects }) => {
                       style={{stroke: "black", strokeWidth:4}}
                     />
                   </svg>
-                ) : undefined}
+                ) : undefined} */}
               </React.Fragment>
             )
           )}
