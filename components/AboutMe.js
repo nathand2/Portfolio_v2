@@ -6,7 +6,7 @@ const AboutMe = () => {
       <div className={styles.aboutme}>
         <h2>
           {" "}
-          Based in Vancouver BC, I&apos;m passionate about software development, the intersection of creativity, technology and forward-thinking
+          Based in Vancouver BC, I&apos;m passionate about software development, the intersection of creativity, technology and forward-thinking. 
           I have a keen interest in video game development in addition to extensive experience with Full-Stack development</h2>
         <div className={styles.circles}>
           <svg width="160" height="50">

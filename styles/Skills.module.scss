@@ -8,16 +8,14 @@ $--line-height: 300px;
 
 .container {
   width: 100vw;
-  // width: 500px !important; 
   color: white;
   display: grid;
   position: relative;
   grid-template-columns: repeat(2, 1fr);
-  // @media screen and (max-width: $screen-small) {
-  //   grid-template-columns: repeat(1, 1fr);
-  // }
+
   min-height: 60vh;
-  background-color: $paper-white-complement;
+  // background-color: $paper-white-complement;
+  // backdrop-filter: blur(50px);
   
   overflow: hidden;
   min-width: 1000px;
@@ -51,7 +49,6 @@ $--line-height: 300px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
      
   
-      font-family: "Orbitron", sans-serif;
       font-optical-sizing: auto;
       font-weight: 400;
       transition: background-color 0.1s linear, color 0.1s linear, transform 0.1s linear, scale 0.1s linear;
@@ -68,10 +65,11 @@ $--line-height: 300px;
       h2 {
         font-size: 24px;
         font-weight: 800;
+        font-family: "Orbitron", sans-serif;
       }
       p {
-        font-size: 14px;
-        font-weight: 800;
+        font-size: 18px;
+        // font-weight: 800;
       }
   
       backdrop-filter: blur(20px);

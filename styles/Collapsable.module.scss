@@ -1,0 +1,31 @@
+@import 'color';
+@import 'size';
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: $dark-main 2px solid;
+  
+  .header_container {
+    width: 100%;
+    cursor: pointer;
+    background-color: $paper-white;
+    color: $paper-white-complement;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h1 {
+      font-size: 32px;
+    }
+    .expand_icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .content_container {
+    width: 100%;
+    transition: height 0.5s ease-in-out;
+    background-color: $paper-white;
+    color: $paper-white-complement;
+  }
+}

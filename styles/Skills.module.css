@@ -7,7 +7,6 @@
   position: relative;
   grid-template-columns: repeat(2, 1fr);
   min-height: 60vh;
-  background-color: #0F1923;
   overflow: hidden;
   min-width: 1000px;
 }
@@ -35,7 +34,6 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   transition: background-color 0.1s linear, color 0.1s linear, transform 0.1s linear, scale 0.1s linear;
@@ -52,10 +50,10 @@
 .container div div h2 {
   font-size: 24px;
   font-weight: 800;
+  font-family: "Orbitron", sans-serif;
 }
 .container div div p {
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 18px;
 }
 .container div .background_text {
   font-family: "Black Ops One", system-ui;

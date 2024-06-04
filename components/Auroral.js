@@ -16,20 +16,13 @@ const Auroral = ({ mouseX, mouseY }) => {
   ];
 
   const themeOffset = 2;
-  const themeChangeTime = 10;
+  const themeChangeTime = 20;
 
   const [currStyle, setCurrStyle] = useState(null);
   const [showAuroral, setShowAuroral] = useState(true);
 
   useEffect(() => {
-    // var now = new Date();
-    // let currStyleIndex = Math.floor(now.getHours() / 6) + themeOffset;
-    // transitionAuroraStyle(currStyleIndex);
-
-    // Random theme
-
-    // transitionAuroraStyle(Math.floor(Math.random() * 6));
-    transitionAuroraStyle(5);
+    // transitionAuroraStyle(5);
   }, []);
 
   const transitionAuroraStyle = async (newStyleIndex) => {
@@ -61,68 +54,79 @@ const Auroral = ({ mouseX, mouseY }) => {
           onClick={() => setShowAuroral(true)}
         />
       )}
-      {/* </button> */}
-      {showAuroral ? (
-        <>
+      <div
+        style={{
+          opacity: showAuroral ? 1 : 0,
+          transition: `opacity 0.1s linear`,
+        }}
+      >
+        <div
+          className={`${auroralStyles["container"]}`}
+          style={{
+            transform: `translateX(calc(-75vw + ${
+              mouseX * 1
+            }px)) translateY(calc(0vh - ${mouseY * 0.4}px))`,
+            transition: `transform 0.1s linear`,
+          }}
+        >
           <div
-            className={`${auroralStyles["container"]}`}
-            style={{
-              transform: `translateX(calc(0vw + calc(0vw - ${
-                mouseX * 1
-              }px))) translateY(calc(0vh + calc(0vh - ${mouseY * 0.4}px)))`,
-              // transition: `transform 0.1s linear`
-            }}
-          >
-            <div
-              className={`${auroralStyles["auroral-northern"]}`}
-              style={{ opacity: currStyle == "auroral-northern" ? 1 : 0 }}
-            ></div>
-            <div
-              className={`${auroralStyles["auroral-northern-intense"]}`}
-              style={{
-                opacity: currStyle == "auroral-northern-intense" ? 1 : 0,
-              }}
-            ></div>
-            <div
-              className={`${auroralStyles["auroral-northern-dimmed"]}`}
-              style={{
-                opacity: currStyle == "auroral-northern-dimmed" ? 1 : 0,
-              }}
-            ></div>
-            <div
-              className={`${auroralStyles["auroral-northern-dusk"]}`}
-              style={{ opacity: currStyle == "auroral-northern-dusk" ? 1 : 0 }}
-            ></div>
-            <div
-              className={`${auroralStyles["auroral-northern-warm"]}`}
-              style={{ opacity: currStyle == "auroral-northern-warm" ? 1 : 0 }}
-            ></div>
-            <div
-              className={`${auroralStyles["auroral-agrabah"]}`}
-              style={{ opacity: currStyle == "auroral-agrabah" ? 1 : 0 }}
-            ></div>
-          </div>
+            className={`${auroralStyles["auroral-test"]}`}
+            style={{ opacity: 1}}
+          ></div>
+          
+          {/* <div
+            className={`${auroralStyles["auroral-purple-opal"]}`}
+            style={{ opacity: 1}}
+          ></div> */}
           <div
-            className={`${auroralStyles["star-container"]}`}
+            className={`${auroralStyles["auroral-northern"]}`}
+            style={{ opacity: currStyle == "auroral-northern" ? 1 : 0 }}
+          ></div>
+          <div
+            className={`${auroralStyles["auroral-northern-intense"]}`}
             style={{
-              // transform: `translateX(${mouseX * 0.01}px) translateY(${mouseY * 0.005}px)`,
-              overflow: "hidden",
-              // transition: `transform 0.1s linear`
+              opacity: currStyle == "auroral-northern-intense" ? 1 : 0,
             }}
-          >
-            <div
-              className={`${auroralStyles["auroral-stars"]}`}
-              style={{
-                transform: `translateX(-${mouseX * 0.01}px) translateY(-${
-                  mouseY * 0.005
-                }px)`,
-                // overflow: "hidden"
-                // transition: `transform 0.1s linear`
-              }}
-            ></div>
-          </div>
-        </>
-      ) : undefined}
+          ></div>
+          <div
+            className={`${auroralStyles["auroral-northern-dimmed"]}`}
+            style={{
+              opacity: currStyle == "auroral-northern-dimmed" ? 1 : 0,
+            }}
+          ></div>
+          <div
+            className={`${auroralStyles["auroral-northern-dusk"]}`}
+            style={{ opacity: currStyle == "auroral-northern-dusk" ? 1 : 0 }}
+          ></div>
+          <div
+            className={`${auroralStyles["auroral-northern-warm"]}`}
+            style={{ opacity: currStyle == "auroral-northern-warm" ? 1 : 0 }}
+          ></div>
+          <div
+            className={`${auroralStyles["auroral-agrabah"]}`}
+            style={{ opacity: currStyle == "auroral-agrabah" ? 1 : 0 }}
+          ></div>
+        </div>
+        <div
+          className={`${auroralStyles["star-container"]}`}
+          style={{
+            // transform: `translateX(${mouseX * 0.01}px) translateY(${mouseY * 0.005}px)`,
+            overflow: "hidden",
+            // transition: `transform 0.1s linear`
+          }}
+        >
+          <div
+            className={`${auroralStyles["auroral-stars"]}`}
+            style={{
+              transform: `translateX(${mouseX * 0.01}px) translateY(${
+                mouseY * 0.005
+              }px)`,
+              // overflow: "hidden"
+              transition: `transform 0.1s linear`,
+            }}
+          ></div>
+        </div>
+      </div>
       {/* <div
         className="mask"
         style={{

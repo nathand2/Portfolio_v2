@@ -43,33 +43,6 @@ const Nav = () => {
                 </Link>
               }
             </li>
-            {/* <li>
-              {
-                <Link href="/about" className={navStyles.header_link}>
-                  <FaUserAlt className={navStyles.icon} />
-                  <h1 className={navStyles.nav_titles}>About Me</h1>
-                </Link>
-              }
-            </li> */}
-            {/* <li>
-              {
-                <Link href="/education" className={navStyles.header_link}>
-                  <MdSchool className={navStyles.icon} />
-                  <h1 className={navStyles.nav_titles}>Education</h1>
-                </Link>
-              }
-            </li> */}
-            {/* <li>
-              <Link
-                href="/Nathan_Dong_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                classNam{navStyles.header_link}
-              >
-                <AiFillFile className={navStyles.icon} />
-                <h1 className={navStyles.nav_titles}>Resume</h1>
-              </Link>
-            </li> */}
             <li>
               {
                 <Link href="/eyes" className={navStyles.header_link}>
@@ -78,6 +51,14 @@ const Nav = () => {
                 </Link>
               }
             </li>
+            {/* <li>
+              {
+                <Link href="/devlog/gouken" className={navStyles.header_link}>
+                  <HiEye className={navStyles.icon} />
+                  <h1 className={navStyles.nav_titles}>Test</h1>
+                </Link>
+              }
+            </li> */}
           </ul>
         </div>
         <span></span>

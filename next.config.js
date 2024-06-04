@@ -8,7 +8,7 @@ const nextConfig = {
     domains: ['cdn.jsdelivr.net'],
     unoptimized: true,
   },
-  assetPrefix: './',
+  // assetPrefix: './',
 }
 
 module.exports = nextConfig

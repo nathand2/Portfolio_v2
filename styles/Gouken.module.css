@@ -1,0 +1,45 @@
+.container {
+  min-height: 100vh;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  scroll-behavior: smooth;
+}
+.container h1 {
+  font-size: 64px;
+}
+.container p {
+  margin-bottom: 20px;
+}
+.container section .content_container {
+  padding: 20px;
+}
+.container section .content_container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.container section .content_container p {
+  margin-bottom: 20px;
+}
+.container ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.container ul li {
+  color: rgb(0, 140, 255);
+}
+
+.video_container {
+  position: relative;
+  width: 100%;
+  max-width: 800px !important;
+  margin: 0 auto;
+}
+.video_container video {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=Gouken.module.css.map */

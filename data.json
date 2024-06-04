@@ -10,6 +10,11 @@
           "name": "Github",
           "link": "https://github.com/GameArchGinyuForce/Gouken",
           "active": true
+        },
+        {
+          "name": "Devlog",
+          "link": "./devlog/gouken",
+          "active": true
         }
       ],
       "desc": "Collaborative Scheduling Web app where users can invite people to sessions via links to collaboratively plan an activity",
@@ -73,6 +78,42 @@
       ]
     },
     {
+      "id": 0,
+      "projectImageName": "wordtrack.png",
+      "projectTitle": "Word Track",
+      "tags": [],
+      "links": [
+        {
+          "name": "Live",
+          "link": "https://word-track-seven.vercel.app/",
+          "active": true
+        },
+        {
+          "name": "Github",
+          "link": "https://github.com/Sepehrman/WordTrack",
+          "active": true
+        }
+      ],
+      "desc": "Collaborative Scheduling Web app where users can invite people to sessions via links to collaboratively plan an activity",
+      "descLong":
+        "Collaborative Scheduling Web app where users can invite people to sessions via links to collaboratively plan an activity. Implemented Frontend using React.js, React Bootstrap and D3. Implemented Backend using Express.js, MySQL, JSON Web Tokens and Passport.js Google Oauth.",
+      "sections": [
+        {
+          "heading": null,
+          "content": [
+            "A React web application that functions as a dictionary, cue card generator and note taking application focused on helping users learn new words they encounter"
+          ]
+        },
+        {
+          "heading": null,
+          "content": [
+            "Implemented web app using React.js and Google Firebase, and conducted acceptance, black-box and QA testing with Cypress to ensure its functionality",
+            "My Favorite Feature: Word of the Day"
+          ]
+        }
+      ]
+    },
+    {
       "id": 1,
       "projectImageName": "scheduler.png",
       "projectTitle": "Collaborative Scheduler",
@@ -115,40 +156,6 @@
         {
           "heading": "Backend:",
           "content": ["Node.js, Express.js, JSON Web Tokens, Passport.js, MySQL"]
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "projectImageName": "craigslist-rental-data.png",
-      "projectTitle": "Craigslist Rental Data",
-      "tags": [
-        { "tag": "Python", "color": "LemonChiffon" },
-        { "tag": "Numpy", "color": "lightgreen" },
-        { "tag": "pandas", "color": "grey" },
-        { "tag": "seaborn", "color": "cadetblue" }
-      ],
-      "links": [
-        {
-          "name": "Github",
-          "link": "https://github.com/nathand2/craigslist_rental_data_vancouver",
-          "active": true
-        }
-      ],
-      "desc": "Generated Vancouver Rental price dataset using Craigslist web scrapping, pre-processed/cleaned the dataset and analyzed the dataset. Implemented using Python, NumPy, pandas, Seaborn and matplotlib.",
-      "descLong": "Long description",
-      "sections": [
-        {
-          "heading": null,
-          "content": [
-            "Generated Vancouver Rental price dataset using Craigslist web scrapping, pre-processed/cleaned the dataset and analyzed the dataset."
-          ]
-        },
-        {
-          "heading": "Implementation: Python",
-          "content": [
-            "Libraries: numpy, pandas, matplotlib, seaborn"
-          ]
         }
       ]
     }
