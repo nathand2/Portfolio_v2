@@ -65,7 +65,9 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  background: linear-gradient(-20deg, rgba(26, 0, 192, 0.4) 40%, rgba(215, 0, 67, 0.4)), linear-gradient(60deg, #1a00c0 10%, #d70043);
+  background: linear-gradient(-20deg, rgba(26, 0, 192, 0.4) 40%, rgba(215, 0, 67, 0.4)), linear-gradient(60deg, #1a00c0 10%, #d70043); 
+  background: -moz-linear-gradient(-20deg, rgba(26, 0, 192, 0.4) 40%, rgba(215, 0, 67, 0.4)), -moz-linear-gradient(60deg, #1a00c0 10%, #d70043); 
+  background: -webkit-linear-gradient(-20deg, rgba(26, 0, 192, 0.4) 40%, rgba(215, 0, 67, 0.4)), -webkit-linear-gradient(60deg, #1a00c0 10%, #d70043); 
   transition: opacity linear 0.8s;
   opacity: 0;
 }
@@ -81,8 +83,9 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  background: linear-gradient(-20deg, #a1d9b4 20%, #32988a 40%, #000e3c 70%);
-  background: linear-gradient(-20deg, transparent 90%, #a1d9b4 100%), linear-gradient(60deg, #32988a 0%, #000e3c);
+  background: linear-gradient(-20deg, transparent 90%, #a1d9b4 100%), linear-gradient(-20deg, #000e3c 0%, #32988a);
+  background: -moz-linear-gradient(-20deg, #000e3c 20%, #32988a 40%, #a1d9b4 100%);
+  background: -webkit-linear-gradient(-20deg, #000e3c 20%, #32988a 40%, #a1d9b4 100%);
   transition: opacity linear 0.8s;
   opacity: 0;
   z-index: 1 !important;
@@ -99,8 +102,9 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  background: linear-gradient(-20deg, #b7a841 20%, #a1006a 40%, #371d40 60%);
   background: linear-gradient(-20deg, transparent 90%, #b7a841 100%), linear-gradient(60deg, #a1006a 0%, #371d40);
+  background: -moz-linear-gradient(-20deg, #b7a841 20%, #a1006a 40%, #371d40 60%);
+  background: -webkit-linear-gradient(-20deg, #b7a841 20%, #a1006a 40%, #371d40 60%);
   transition: opacity linear 0.8s;
   opacity: 0;
   z-index: 1 !important;
@@ -117,9 +121,9 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  /* background: linear-gradient(220.55deg, #DD7BFF 0%, #FF6C6C 100%); */
-  background: linear-gradient(-20deg, #5D85A6 0%, #0E2C5E 80%); /* Blue */
-
+  background: linear-gradient(-20deg, #5D85A6 0%, #0E2C5E 80%);
+  background: -moz-linear-gradient(-20deg, #5D85A6 0%, #0E2C5E 80%);
+  background: -webkit-linear-gradient(-20deg, #5D85A6 0%, #0E2C5E 80%);
   transition: opacity linear 0.8s;
   opacity: 0;
   z-index: 1 !important;
@@ -136,10 +140,9 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  /* background: linear-gradient(-20deg, rgba(145, 107, 99, 0.5) 15%, rgba(184, 186, 111, 0.5) 25%, transparent 60%), linear-gradient(-20deg, #916b63 9%, #b8ba6f 30%, #ed7c94 45%, #23529a 65%); */
-  
-  background: linear-gradient(-20deg, #f73e1e 20%, #3193cc 80%); /* Blue & Orange */
-
+  background: linear-gradient(-20deg, #f73e1e 20%, #3193cc 80%);
+  background: -moz-linear-gradient(-20deg, #f73e1e 20%, #3193cc 80%);
+  background: -webkit-linear-gradient(-20deg, #f73e1e 20%, #3193cc 80%);
   transition: opacity linear 0.8s;
   opacity: 0;
   z-index: 1 !important;
@@ -156,13 +159,14 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  /* background: linear-gradient(-20deg, transparent 70%, #da7712 95%), linear-gradient(-20deg, #432c24 30%, #d96d7d 62%, #da7712 95%); */
   background: linear-gradient(-20deg, transparent 90%, #da7712 100%), linear-gradient(60deg, #d96d7d 30%, #da7712);
-
+  background: -moz-linear-gradient(-20deg, transparent 90%, #da7712 100%), -moz-linear-gradient(60deg, #d96d7d 30%, #da7712);
+  background: -webkit-linear-gradient(-20deg, transparent 90%, #da7712 100%), -webkit-linear-gradient(60deg, #d96d7d 30%, #da7712);
   transition: opacity linear 0.8s;
   opacity: 0;
   z-index: 1 !important;
 }
+
 
 .auroral-dg-31 {
   position: absolute;

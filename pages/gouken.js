@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "../../styles/Gouken.module.css";
+import styles from "../styles/Gouken.module.css";
 
 import Image from "next/image";
-import Collapsable from "../../components/Collapsable";
+import Collapsable from "../components/Collapsable";
 
-const Gouken = () => {
+const Home = () => {
   return (
     <div className={styles.container}>
       <h1>Devlog // Gouken</h1>
@@ -166,4 +166,4 @@ const Gouken = () => {
   );
 };
 
-export default Gouken;
+export default Home;

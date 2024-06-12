@@ -13,7 +13,7 @@
         },
         {
           "name": "Devlog",
-          "link": "./devlog/gouken",
+          "link": "/gouken",
           "active": true
         }
       ],

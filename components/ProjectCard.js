@@ -1,6 +1,7 @@
 import styles from "../styles/ProjectCard.module.css";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 import ProjectCardDesc from "./ProjectCardDesc";
@@ -50,9 +51,9 @@ const ProjectCard = ({
         <div className={styles.project_links}>
           {links.map(({ name, link, active }, index) =>
             active ? (
-              <a href={link} className={styles.link_active} key={index}>
+              <Link href={link} className={styles.link_active} key={index}>
                 {name}
-              </a>
+              </Link>
             ) : (
               <a className={styles.link_inactive} key={index}>
                 {name}

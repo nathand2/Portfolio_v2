@@ -9,12 +9,12 @@ import AuroralNav from "./AuroralNav";
 
 const Auroral = ({ mouseX, mouseY }) => {
   const auroralStyleArr = [
-    "auroral-northern-intense",
-    "auroral-northern",
     "auroral-northern-dimmed",
     "auroral-northern-dusk",
     "auroral-northern-warm",
     "auroral-agrabah",
+    "auroral-northern-intense",
+    "auroral-northern",
   ];
 
   const themeOffset = 2;
@@ -22,9 +22,13 @@ const Auroral = ({ mouseX, mouseY }) => {
 
   const [currStyle, setCurrStyle] = useState(null);
   const [showAuroral, setShowAuroral] = useState(false);
+  const [easeBackgroundTransform, setEaseBackgroundTransform] = useState(true);
 
   useEffect(() => {
     // transitionAuroraStyle(5);
+    setTimeout(() => {
+      setEaseBackgroundTransform(false);
+    }, 1000 * 2);
   }, []);
 
   const transitionAuroraStyle = async (newStyleIndex) => {
@@ -68,7 +72,8 @@ const Auroral = ({ mouseX, mouseY }) => {
               transform: `translateX(calc(-75vw + ${
                 mouseX * 1
               }px)) translateY(calc(0vh - ${mouseY * 0.4}px))`,
-              transition: `transform 0.1s linear`,
+              transition: easeBackgroundTransform ? `transform 0.1s linear` : "none",
+              willChange: "transform",
             }}
           >
             {/* <div
