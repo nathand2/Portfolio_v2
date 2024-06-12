@@ -44,9 +44,9 @@ const AuroralNav = ({setShowAuroral, setCurrStyle, auroralStyleArr}) => {
               </a>
             </li>
             {
-              auroralStyleArr.map((auroralStyle) => {
+              auroralStyleArr.map((auroralStyle, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <a className={navStyles.header_link}>
                       {/* <FaCircle className={navStyles.icon} fill="url(#dg-26)" onClick={() => showAndSetCurrStyle("dg-26")}/> */}
                       <div className={`${navStyles.icon} ${navStyles[auroralStyle]}`} onClick={() => showAndSetCurrStyle(auroralStyle)}></div>

@@ -64,7 +64,7 @@ const Gouken = () => {
             <p>
               Hitboxes and Hurtboxes were implemented to determine when attacks hit and miss. We considered 2 appoaches for hitboxes:
               <br/>
-              1. Manually creating hitboxes relative to a characters' root position (picture spawning floating hitboxes in front of the character)
+              1. Manually creating hitboxes relative to a characters&apos; root position (picture spawning floating hitboxes in front of the character)
               <br/>
               2. Mounting boxes on the character model
               <br/>
