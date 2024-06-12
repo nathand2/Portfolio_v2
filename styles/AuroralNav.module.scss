@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+@import 'size';
+@import 'color';
+
+$nav-icon-width: 20px;
+$nav-icon-height: 20px;
+$nav-logo-width: 40px; // Width set in component <Image> element
+
+$nav-link-height: 40px;
+
+.nav {
+  position: fixed !important;
+  height: 100vh;
+  color: #D7E2E1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 20 !important;
+  transition: width .5s, background-color 0.3s ease;
+  overflow-x: hidden;
+  margin-right: 30px;
+  right: 0;
+
+  
+  .logo_container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  @keyframes sparkle {
+    0% { border-color: #D7E2E1; }
+    100% { border-color: #2e375abf; }
+  }
+  div {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      // margin-top: 20px;
+    
+      li {
+        margin-bottom: 15px;
+        height: $nav-link-height;
+    
+        a {
+          display: grid;
+          grid-template-columns: $nav-logo-width auto; /* Start with one column */
+          height: $nav-link-height;
+          transition: width 0.3s linear, border 1s linear, background-color 0.5s linear;
+    
+          background-color: transparent;
+          border: white solid 1px;
+          border-radius: 20px;
+          overflow: hidden;
+
+          width: $nav-logo-width;
+          border: transparent solid 1px;
+          background-color: transparent;
+    
+          .icon {
+            height: $nav-icon-height;
+            width: $nav-icon-width;
+            // margin: auto;
+            margin-left: calc(calc($nav-logo-width - 1px) / 2 - $nav-icon-width / 2);
+            margin-top: calc(calc($nav-logo-width - 1px) / 2 - $nav-icon-width / 2);
+            border-radius: $nav-icon-height;
+            scale: 1.3;
+            &:hover {
+              scale: 2;
+            }
+            transition: scale 0.1s linear;
+          }
+    
+          h1 {
+            margin-left: 20px;
+            font-size: 16px;
+            vertical-align: middle;
+            height: $nav-link-height;
+            line-height: $nav-link-height;
+            transition: opacity 0.5s linear;
+    
+            // &:hover {
+            //   opacity: 1;
+            // }
+          }
+    
+          &:not(:hover) {
+            width: $nav-logo-width;
+            border: transparent solid 1px;
+            background-color: transparent;
+          }
+    
+          // &:hover {
+          //   border: rgba(46, 55, 90, 0.749) solid 1px;
+          //   background-color: $dark-main;
+          //   -webkit-animation: sparkle 0.5s linear;
+          //   -moz-animation: sparkle 0.5s linear;
+          //   -o-animation: sparkle 0.5s linear;
+          //   animation: sparkle 0.5s linear;
+          // }
+        }
+      }
+    }
+  }
+}
+
+// .auroral-agrabah {
+//   background: linear-gradient(-45deg, rgba(26, 0, 192, 0.4) 40%, rgba(215, 0, 67, 0.4)), linear-gradient(-45deg, #1a00c0 10%, #d70043);
+// }
+
+// .auroral-northern {
+//   background: linear-gradient(-45deg, #a1d9b4 20%, #32988a 40%, #000e3c 70%);
+// }
+
+// .auroral-northern-intense {
+//   background: linear-gradient(-45deg, #b7a841 20%, #a1006a 40%, #371d40 60%);
+// }
+
+// .auroral-northern-dimmed {
+//   background: linear-gradient(-45deg, rgba(237, 124, 148, 0.3) 20%, rgba(35, 82, 154, 0.3) 70%), linear-gradient(-45deg, #916b63 7%, #b8ba6f 20%, #ed7c94 40%, #23529a 60%);
+// }
+
+// .auroral-northern-dusk {
+//   background: linear-gradient(-45deg, rgba(145, 107, 99, 0.5) 15%, rgba(184, 186, 111, 0.5) 25%, transparent 60%), linear-gradient(-45deg, #916b63 9%, #b8ba6f 30%, #ed7c94 45%, #23529a 65%);
+// }
+
+// .auroral-northern-warm {
+//   background: linear-gradient(-45deg, transparent 90%, #da7712 100%), linear-gradient(-45deg, #d96d7d 30%, #da7712);
+// }
+
+.auroral-agrabah {
+  background: linear-gradient(-20deg, rgba(26, 0, 192, 0.4) 40%, rgba(215, 0, 67, 0.4)), linear-gradient(60deg, #1a00c0 10%, #d70043);
+}
+
+.auroral-northern {
+  background: linear-gradient(-20deg, #a1d9b4 20%, #32988a 40%, #000e3c 70%);
+}
+
+.auroral-northern-intense {
+  background: linear-gradient(-20deg, #b7a841 20%, #a1006a 40%, #371d40 60%);
+}
+
+.auroral-northern-dimmed {
+  background: linear-gradient(-20deg, #5D85A6 0%, #0E2C5E 80%); /* Blue */
+}
+
+.auroral-northern-dusk {
+  background: linear-gradient(-20deg, #f73e1e 0%, #3193cc 100%); /* Blue & Orange */
+}
+
+.auroral-northern-warm {
+  background: linear-gradient(-20deg, transparent 90%, #da7712 100%), linear-gradient(-20deg, #d96d7d 30%, #da7712);
+}
+
+
+.nav_menu {
+  height: $nav-height;
+  width: 100%;
+  padding: 10px;
+  color: #D7E2E1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 20 !important;
+}
+
+.social-links {
+  // margin-left: auto;
+  /* Push to right */
+  font-weight: 300;
+  // position: absolute;
+  bottom: 20px;
+  margin-top: auto;
+}

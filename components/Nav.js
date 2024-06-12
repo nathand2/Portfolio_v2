@@ -2,10 +2,8 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 
-import { AiFillFile } from "react-icons/ai";
-import { FaGithub, FaLinkedin, FaHome, FaUserAlt } from "react-icons/fa";
-import { HiOutlineMail, HiMenu, HiEye } from "react-icons/hi";
-import { MdSchool } from "react-icons/md";
+import { FaGithub, FaLinkedin, FaHome } from "react-icons/fa";
+import { HiOutlineMail, HiEye } from "react-icons/hi";
 import { GoFileDirectory } from "react-icons/go";
 
 import navStyles from "../styles/Nav.module.css";

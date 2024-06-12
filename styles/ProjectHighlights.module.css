@@ -1,3 +1,8 @@
+/*
+A simple little SCSS mixin for creating scrim gradients
+Inspired by Andreas Larson - https://github.com/larsenwork
+https://css-tricks.com/easing-linear-gradients/
+*/
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@100..900&family=Orbitron:wght@400..900&display=swap");
 .container {
   min-height: 100vh;

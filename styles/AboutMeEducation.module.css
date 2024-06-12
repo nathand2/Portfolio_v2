@@ -1,3 +1,8 @@
+/*
+A simple little SCSS mixin for creating scrim gradients
+Inspired by Andreas Larson - https://github.com/larsenwork
+https://css-tricks.com/easing-linear-gradients/
+*/
 .container {
   width: 100%;
   height: 80vh;

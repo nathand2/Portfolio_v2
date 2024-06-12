@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
 } */
-
 .container {
   width: 300vw !important;
   height: 150vh;
@@ -15,134 +14,59 @@ body {
   display: block;
   z-index: 1 !important;
 }
-
-@-webkit-keyframes aura {
-  0% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  20% {
-    -webkit-transform: translateY(100px) rotate(1deg);
-            transform: translateY(100px) rotate(1deg);
-  }
-  40% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
-  60% {
-    -webkit-transform: rotate(-1deg);
-            transform: rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translateY(-10px) rotate(16deg);
-            transform: translateY(-10px) rotate(16deg);
-  }
-  100% {
-    -webkit-transform: rotate(1deg);
-            transform: rotate(1deg);
-  }
-}
-
 @keyframes aura {
   0% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
+    transform: rotate(20deg);
   }
   20% {
-    -webkit-transform: translateY(100px) rotate(1deg);
-            transform: translateY(100px) rotate(1deg);
+    transform: translateY(100px) rotate(1deg);
   }
   40% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
+    transform: rotate(-15deg);
   }
   60% {
-    -webkit-transform: rotate(-1deg);
-            transform: rotate(-1deg);
+    transform: rotate(-1deg);
   }
   80% {
-    -webkit-transform: translateY(-10px) rotate(16deg);
-            transform: translateY(-10px) rotate(16deg);
+    transform: translateY(-10px) rotate(16deg);
   }
   100% {
-    -webkit-transform: rotate(1deg);
-            transform: rotate(1deg);
+    transform: rotate(1deg);
   }
 }
-
-@-webkit-keyframes northern {
-  0% {
-    -webkit-transform: translate(5%, -2%);
-            transform: translate(5%, -2%);
-  }
-  25% {
-    -webkit-transform: translate(10%, 7%);
-            transform: translate(10%, 7%);
-  }
-  40% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-  }
-  60% {
-    -webkit-transform: translate(7%, -2%);
-            transform: translate(7%, -2%);
-  }
-  85% {
-    -webkit-transform: translate(6%, 3%) rotate(12deg);
-            transform: translate(6%, 3%) rotate(12deg);
-  }
-  100% {
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
 @keyframes northern {
   0% {
-    -webkit-transform: translate(5%, -2%);
-            transform: translate(5%, -2%);
+    transform: translate(5%, -2%);
   }
   25% {
-    -webkit-transform: translate(10%, 7%);
-            transform: translate(10%, 7%);
+    transform: translate(10%, 7%);
   }
   40% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
   60% {
-    -webkit-transform: translate(7%, -2%);
-            transform: translate(7%, -2%);
+    transform: translate(7%, -2%);
   }
   85% {
-    -webkit-transform: translate(6%, 3%) rotate(12deg);
-            transform: translate(6%, 3%) rotate(12deg);
+    transform: translate(6%, 3%) rotate(12deg);
   }
   100% {
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
 }
-
 .auroral-agrabah {
   position: absolute;
   left: -25%;
   top: -50%;
   width: 200%;
   height: 200%;
-  -webkit-animation-name: aura;
-          animation-name: aura;
-  -webkit-animation-duration: 50s;
-          animation-duration: 50s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  background: -webkit-linear-gradient(110deg, rgba(26, 0, 192, 0.4) 40%, rgba(215, 0, 67, 0.4)), -webkit-linear-gradient(30deg, #1a00c0 10%, #d70043);
+  animation-name: aura;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   background: linear-gradient(-20deg, rgba(26, 0, 192, 0.4) 40%, rgba(215, 0, 67, 0.4)), linear-gradient(60deg, #1a00c0 10%, #d70043);
-  transition: opacity linear 2s;
+  transition: opacity linear 0.8s;
   opacity: 0;
 }
 
@@ -152,19 +76,14 @@ body {
   top: -50%;
   width: 200%;
   height: 200%;
-  -webkit-animation-name: northern;
-          animation-name: northern;
-  -webkit-animation-duration: 50s;
-          animation-duration: 50s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  background: -webkit-linear-gradient(80deg, #a1d9b4 20%, #32988a 40%, #000e3c 70%);
-  background: linear-gradient(10deg, #a1d9b4 20%, #32988a 40%, #000e3c 70%);
-  transition: opacity linear 2s;
+  animation-name: northern;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: linear-gradient(-20deg, #a1d9b4 20%, #32988a 40%, #000e3c 70%);
+  background: linear-gradient(-20deg, transparent 90%, #a1d9b4 100%), linear-gradient(60deg, #32988a 0%, #000e3c);
+  transition: opacity linear 0.8s;
   opacity: 0;
   z-index: 1 !important;
 }
@@ -175,19 +94,14 @@ body {
   top: -50%;
   width: 200%;
   height: 200%;
-  -webkit-animation-name: aura;
-          animation-name: aura;
-  -webkit-animation-duration: 50s;
-          animation-duration: 50s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  background: -webkit-linear-gradient(80deg, #b7a841 20%, #a1006a 40%, #371d40 60%);
-  background: linear-gradient(10deg, #b7a841 20%, #a1006a 40%, #371d40 60%);
-  transition: opacity linear 2s;
+  animation-name: aura;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: linear-gradient(-20deg, #b7a841 20%, #a1006a 40%, #371d40 60%);
+  background: linear-gradient(-20deg, transparent 90%, #b7a841 100%), linear-gradient(60deg, #a1006a 0%, #371d40);
+  transition: opacity linear 0.8s;
   opacity: 0;
   z-index: 1 !important;
 }
@@ -198,19 +112,15 @@ body {
   top: -50%;
   width: 200%;
   height: 200%;
-  -webkit-animation-name: northern;
-          animation-name: northern;
-  -webkit-animation-duration: 50s;
-          animation-duration: 50s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  background: -webkit-linear-gradient(135deg, rgba(237, 124, 148, 0.3) 20%, rgba(35, 82, 154, 0.3) 70%), -webkit-linear-gradient(80deg, #916b63 7%, #b8ba6f 20%, #ed7c94 40%, #23529a 60%);
-  background: linear-gradient(-45deg, rgba(237, 124, 148, 0.3) 20%, rgba(35, 82, 154, 0.3) 70%), linear-gradient(10deg, #916b63 7%, #b8ba6f 20%, #ed7c94 40%, #23529a 60%);
-  transition: opacity linear 2s;
+  animation-name: northern;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* background: linear-gradient(220.55deg, #DD7BFF 0%, #FF6C6C 100%); */
+  background: linear-gradient(-20deg, #5D85A6 0%, #0E2C5E 80%); /* Blue */
+
+  transition: opacity linear 0.8s;
   opacity: 0;
   z-index: 1 !important;
 }
@@ -221,19 +131,16 @@ body {
   top: -50%;
   width: 200%;
   height: 200%;
-  -webkit-animation-name: northern;
-          animation-name: northern;
-  -webkit-animation-duration: 50s;
-          animation-duration: 50s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  background: -webkit-linear-gradient(125deg, rgba(145, 107, 99, 0.5) 15%, rgba(184, 186, 111, 0.5) 25%, transparent 60%), -webkit-linear-gradient(80deg, #916b63 9%, #b8ba6f 30%, #ed7c94 45%, #23529a 65%);
-  background: linear-gradient(-35deg, rgba(145, 107, 99, 0.5) 15%, rgba(184, 186, 111, 0.5) 25%, transparent 60%), linear-gradient(10deg, #916b63 9%, #b8ba6f 30%, #ed7c94 45%, #23529a 65%);
-  transition: opacity linear 2s;
+  animation-name: northern;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* background: linear-gradient(-20deg, rgba(145, 107, 99, 0.5) 15%, rgba(184, 186, 111, 0.5) 25%, transparent 60%), linear-gradient(-20deg, #916b63 9%, #b8ba6f 30%, #ed7c94 45%, #23529a 65%); */
+  
+  background: linear-gradient(-20deg, #f73e1e 20%, #3193cc 80%); /* Blue & Orange */
+
+  transition: opacity linear 0.8s;
   opacity: 0;
   z-index: 1 !important;
 }
@@ -244,65 +151,49 @@ body {
   top: -50%;
   width: 200%;
   height: 200%;
-  -webkit-animation-name: aura;
-          animation-name: aura;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  background: -webkit-linear-gradient(85deg, transparent 70%, #da7712 95%), -webkit-linear-gradient(290deg, #432c24 30%, #d96d7d 62%, #da7712 95%);
-  background: linear-gradient(5deg, transparent 70%, #da7712 95%), linear-gradient(160deg, #432c24 30%, #d96d7d 62%, #da7712 95%);
-  transition: opacity linear 2s;
+  animation-name: aura;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* background: linear-gradient(-20deg, transparent 70%, #da7712 95%), linear-gradient(-20deg, #432c24 30%, #d96d7d 62%, #da7712 95%); */
+  background: linear-gradient(-20deg, transparent 90%, #da7712 100%), linear-gradient(60deg, #d96d7d 30%, #da7712);
+
+  transition: opacity linear 0.8s;
   opacity: 0;
   z-index: 1 !important;
 }
 
-.auroral-purple-opal {
+.auroral-dg-31 {
   position: absolute;
   left: -25%;
   top: -50%;
   width: 200%;
   height: 200%;
-  -webkit-animation-name: aura;
-          animation-name: aura;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  background: -webkit-linear-gradient(0deg, #4063BC 0%, #6B0013 100%);
+  animation-name: aura;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   background: linear-gradient(0deg, #4063BC 0%, #6B0013 100%);
-  transition: opacity linear 2s;
+  transition: opacity linear 0.8s;
   opacity: 0;
   z-index: 1 !important;
 }
 
-.auroral-test {
+.auroral-dg-26 {
   position: absolute;
   left: -25%;
   top: -50%;
   width: 200%;
   height: 200%;
-  -webkit-animation-name: aura;
-          animation-name: aura;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  background: -webkit-linear-gradient(0deg, #4063BC 0%, #6B0013 100%);
-  background: linear-gradient(0deg, #4063BC 0%, #6B0013 100%);
-  transition: opacity linear 2s;
+  animation-name: aura;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: linear-gradient(-15deg, #FF3F3F 30%, #063CFF 70%);
+  transition: opacity linear 0.8s;
   opacity: 0;
   z-index: 1 !important;
 }
@@ -330,18 +221,16 @@ body {
 }
 
 .toggle_btn {
-  position: absolute;
+  position: fixed;
   z-index: 15 !important;
   right: 20px;
   top: 20px;
-
   width: 30px;
   height: 30px;
   border-radius: 50px;
   border-color: white;
   box-shadow: none;
   background-color: transparent;
-
   cursor: pointer;
 }
 
@@ -353,6 +242,4 @@ body {
   background: radial-gradient(circle, transparent 150px, rgba(0, 0, 0, 0.8) 300px);
   mix-blend-mode: multiply;
   overflow: hidden;
-} */
-
-
+} *//*# sourceMappingURL=Auroral.module.css.map */
