@@ -15,12 +15,6 @@ const Scheduler = () => {
         commodo proident enim aute reprehenderit dolore. Nostrud dolore irure
         reprehenderit ex nulla fugiat.
       </p>
-      {/* <div className={styles.video_container}>
-        <video controls>
-          <source src="/gouken_sizzle_reel.mov" />
-          Your browser does not support the video tag.
-        </video>
-      </div> */}
 
       <section id="jwt">
         <Collapsable header="JSON Web Tokens">
@@ -44,4 +38,4 @@ const Scheduler = () => {
   );
 };
 
-export default Gouken;
+export default Scheduler;
