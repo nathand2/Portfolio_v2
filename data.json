@@ -84,11 +84,6 @@
       "tags": [],
       "links": [
         {
-          "name": "Live",
-          "link": "https://word-track-seven.vercel.app/",
-          "active": true
-        },
-        {
           "name": "Github",
           "link": "https://github.com/Sepehrman/WordTrack",
           "active": true
