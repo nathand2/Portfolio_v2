@@ -51,6 +51,7 @@ https://css-tricks.com/easing-linear-gradients/
   color: #0F1923;
   scale: 1.1;
   transform: translateX(20px);
+  cursor: default;
 }
 .container div div h2 {
   font-size: 24px;
@@ -75,6 +76,7 @@ https://css-tricks.com/easing-linear-gradients/
 }
 .container div .background_text:hover {
   color: rgba(255, 255, 255, 0.1);
+  cursor: default;
 }
 
 .content_container {

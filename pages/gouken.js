@@ -99,12 +99,12 @@ const Home = () => {
         {/* <h2>Input Buffers & Special Moves</h2> */}
         <Collapsable header="Input Buffers & Special Moves">
         <div className={styles.content_container}>
-          <p>
+          {/* <p>
             Mollit adipisicing est ad et duis velit ex adipisicing duis qui
             deserunt fugiat aute. Exercitation commodo sit ex et ipsum aliquip
             dolor ad ex et adipisicing quis id cillum. Sit tempor exercitation
             culpa aliquip est.
-          </p>
+          </p> */}
           <div className={styles.video_container}>
             <video controls>
               <source src="/input_buffer.mov" />
@@ -115,10 +115,9 @@ const Home = () => {
         </Collapsable>
       </section>
 
-      <section id="ecs">
+      {/* <section id="ecs">
       <Collapsable header="Entity Component System (ECS), Update Loop & Framerate">
         <div className={styles.content_container}>
-          {/* <h2>Entity Component System (ECS), Update Loop & Framerate</h2> */}
           <p>
             Mollit adipisicing est ad et duis velit ex adipisicing duis qui
             deserunt fugiat aute. Exercitation commodo sit ex et ipsum aliquip
@@ -127,12 +126,11 @@ const Home = () => {
           </p>
         </div>
       </Collapsable>
-      </section>
+      </section> */}
 
-      <section id="statemachines">
+      {/* <section id="statemachines">
       <Collapsable header="Characters As State Machines">
         <div className={styles.content_container}>
-          {/* <h2>Characters As State Machines</h2> */}
           <p>
             Mollit adipisicing est ad et duis velit ex adipisicing duis qui
             deserunt fugiat aute. Exercitation commodo sit ex et ipsum aliquip
@@ -141,18 +139,17 @@ const Home = () => {
           </p>
         </div>
       </Collapsable>
-      </section>
+      </section> */}
 
       <section id="networking">
       <Collapsable header="Peer-to-Peer Networking">
         <div className={styles.content_container}>
-          {/* <h2>Peer-to-Peer Networking</h2> */}
-          <p>
+          {/* <p>
             Mollit adipisicing est ad et duis velit ex adipisicing duis qui
             deserunt fugiat aute. Exercitation commodo sit ex et ipsum aliquip
             dolor ad ex et adipisicing quis id cillum. Sit tempor exercitation
             culpa aliquip est.
-          </p>
+          </p> */}
           <div className={styles.video_container}>
             <video controls>
               <source src="/camera_lerp.mov" />

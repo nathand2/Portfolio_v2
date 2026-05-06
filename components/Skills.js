@@ -8,7 +8,7 @@ const Skills = () => {
         <div className={styles.col}>
           <div className={styles.skill_container}>
             <h2>Languages</h2>
-            <p>Python 🐍, C#, C++, Swift, Java, C, Javascript, Typescript</p>
+            <p>Python 🐍, C#, C++, Java, C, Javascript, Typescript</p>
           </div>
           <div className={styles.skill_container}>
             <h2>Web/Mobile</h2>
@@ -19,8 +19,8 @@ const Skills = () => {
               <p>MySQL, PostgreSQL</p>
           </div>
           <div className={styles.skill_container}>
-            <h2>Methodologies</h2>
-            <p>Agile, Object Oriented Programming, REST Api&apos;s</p>
+            <h2>Game Dev</h2>
+            <p>Unreal Engine, Unity and OpenGL</p>
           </div>
         </div>
         <div className={styles.col}>

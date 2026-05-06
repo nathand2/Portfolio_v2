@@ -1,6 +1,87 @@
 {
   "highlightProjectData": [
     {
+      "id": 1,
+      "projectImageName": "scheduler.png",
+      "projectTitle": "Collaborative Scheduler",
+      "tags": [
+        { "tag": "React.js", "color": "lightblue" },
+        { "tag": "Express", "color": "lightgreen" },
+        { "tag": "Passport.js", "color": "lightgreen" },
+        { "tag": "JWT", "color": "lightgreen" },
+        { "tag": "Javascript", "color": "lightgreen" },
+        { "tag": "MySQL", "color": "lightgreen" },
+        { "tag": "Sass", "color": "pink" }
+      ],
+      "links": [
+        {
+          "name": "Live (Try Me!)",
+          "link": "https://scheduler.nathandong.dev",
+          "active": true
+        },
+        {
+          "name": "Github",
+          "link": "https://github.com/nathand2/scheduling-web-app",
+          "active": true
+        }
+      ],
+      "desc": "Collaborative Scheduling Web app where users can invite people to sessions via links to collaboratively plan an activity",
+      "descLong":
+        "Collaborative Scheduling Web app where users can invite people to sessions via links to collaboratively plan an activity. Implemented Frontend using React.js, React Bootstrap and D3. Implemented Backend using Express.js, MySQL, JSON Web Tokens and Passport.js Google Oauth.",
+      "sections": [
+        {
+          "heading": "Standout Features:",
+          "content": [
+            "1. Dual authentication system: Google OAuth via Passportjs and local username/password with bcrypt hashing.",
+            "2. Hardened JWT implementation: Fingerprinting with hashed random strings stored in HttpOnly cookies to prevent XSS token theft, separate access/refresh token rotation and refresh token storage.",
+            "3. Invite link system with post-auth redirect flow: Users can generate shareable invite links via UUID tokens stored in the database. Unauthenticated users hitting an invite link are redirected to login/signup and automatically redirected back to the session after authentication, preserving the invite context through the auth flow.",
+            "4. Real-time collaborative scheduling via WebSockets: Socket.io with room-based event broadcasting for live updates when users join sessions, add time ranges or delete ranges.",
+            "5. Microservices-style architecture: Three separate services (REST API, WebSocket server, React frontend) each independently deployed with their own subdomains, systemd services and nginx reverse proxy config."
+          ]
+        },
+        {
+          "heading": "What problem does this solve?",
+          "content": [
+            "Scheduling with fixed times means endless back-and-forth. Collaborative Scheduler lets everyone mark when they're free, so the group can instantly see the best time that works for everyone."
+          ]
+        },
+        {
+          "heading": "Frontend:",
+          "content": ["React.js, ReactBootstrap, D3"]
+        },
+        {
+          "heading": "Backend:",
+          "content": ["Node.js, Express.js, JSON Web Tokens, Passport.js, MySQL"]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "projectImageName": "duckengine_0.png",
+      "projectTitle": "Duck Engine",
+      "tags": [],
+      "links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/ParthCv/Duck-Engine",
+          "active": true
+        }
+      ],
+      "desc": "",
+      "descLong": "",
+      "sections": [
+        {
+          "heading": null,
+          "content": [
+            "Collaborated with a team of 6 to build a custom C++ game engine using OpenGL with an ECS architecture, contributing to a deferred rendering pipeline with shadow mapping, PBR materials and IBL.", 
+            "Implemented shadow mapping integrated with the team's GBuffer and multi-target framebuffer pipeline for dynamic lighting across multi-light scenes.", 
+            "Developed core game systems including round management, score tracking and UI state tied to game events.", 
+            "Built a debug visualization system rendering wireframe bounding boxes to aid physics troubleshooting and debugging."
+          ]
+        }
+      ]
+    },
+    {
       "id": 0,
       "projectImageName": "gouken.png",
       "projectTitle": "Gouken",
@@ -105,52 +186,6 @@
             "Implemented web app using React.js and Google Firebase, and conducted acceptance, black-box and QA testing with Cypress to ensure its functionality",
             "My Favorite Feature: Word of the Day"
           ]
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "projectImageName": "scheduler.png",
-      "projectTitle": "Collaborative Scheduler",
-      "tags": [
-        { "tag": "React.js", "color": "lightblue" },
-        { "tag": "Express", "color": "lightgreen" },
-        { "tag": "Passport.js", "color": "lightgreen" },
-        { "tag": "JWT", "color": "lightgreen" },
-        { "tag": "Javascript", "color": "lightgreen" },
-        { "tag": "MySQL", "color": "lightgreen" },
-        { "tag": "Sass", "color": "pink" }
-      ],
-      "links": [
-        {
-          "name": "Github",
-          "link": "https://github.com/nathand2/scheduling-web-app",
-          "active": true
-        }
-      ],
-      "desc": "Collaborative Scheduling Web app where users can invite people to sessions via links to collaboratively plan an activity",
-      "descLong":
-        "Collaborative Scheduling Web app where users can invite people to sessions via links to collaboratively plan an activity. Implemented Frontend using React.js, React Bootstrap and D3. Implemented Backend using Express.js, MySQL, JSON Web Tokens and Passport.js Google Oauth.",
-      "sections": [
-        {
-          "heading": null,
-          "content": [
-            "Collaborative Scheduling Web app where users can invite people to sessions via links to collaboratively plan an activity"
-          ]
-        },
-        {
-          "heading": "What problem does this solve?",
-          "content": [
-            "Discussing plans with people using strict start times is inflexible and leads to a lot of back and forth. Instead of endless re-adjusting the plans to fit everyones needs, instead, everyone can just say what time they are available. Everyone can see when everyone else is available and can then make plans accordingly"
-          ]
-        },
-        {
-          "heading": "Frontend:",
-          "content": ["React.js, ReactBootstrap, D3"]
-        },
-        {
-          "heading": "Backend:",
-          "content": ["Node.js, Express.js, JSON Web Tokens, Passport.js, MySQL"]
         }
       ]
     }

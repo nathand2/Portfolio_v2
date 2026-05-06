@@ -24,7 +24,7 @@ const ProjectCard = ({
     // className={styles.project_desc_container}>
     <div className={styles.project_card_container}>
       <div>
-        <h1 className={styles.project_name}>{"//" + title.toUpperCase()}</h1>
+        <h1 className={styles.project_name}>{"// " + title.toUpperCase()}</h1>
         <svg width="100%" height="10" style={{ transform: `translateY(-10px)`}}>
           <line
             x1="0"

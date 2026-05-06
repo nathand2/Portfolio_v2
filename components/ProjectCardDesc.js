@@ -12,6 +12,8 @@ const ProjectCardDesc = ({ heading, content }) => {
             <p style={{
               fontSize: "16px"
             }}>{section}</p>
+            
+            <br/>
           </React.Fragment>
         ))}
         <br />
