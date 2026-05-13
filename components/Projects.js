@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard'
 const Projects = ({ projects }) => {
   return (
     <div className={styles.container} id='projects' >
-      <h1>My Projects</h1>
+      <h1 className={styles.title}>My Projects</h1>
       <br/>
       <div className={styles.project_container}>
         {

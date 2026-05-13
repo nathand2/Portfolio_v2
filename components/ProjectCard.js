@@ -65,7 +65,8 @@ const ProjectCard = ({
 
       <div className={styles.image_container}>
         <Image
-          src={`https://cdn.jsdelivr.net/gh/nathand2/Portfolio_v2@main/public/${projectImageName}`}
+          // src={`https://cdn.jsdelivr.net/gh/nathand2/Portfolio_v2@main/public/${projectImageName}`}
+          src={`/${projectImageName}`}
           className={styles.preview}
           alt={projectImageName}
           fill
